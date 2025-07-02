@@ -41,9 +41,8 @@ export default function HomePage() {
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
               Transforming Development Through Strategic AI Assessment
             </h1>
-            <p className="text-xl lg:text-2xl text-slate-300 mb-8 leading-relaxed">
-              We are software development veterans who help organizations navigate the AI coding revolution through expert assessment, strategic recommendations, and practical implementation guidance.<br/>
-              <span className="block mt-4">Our approach: <b>Assess</b> your current capabilities → <b>Recommend</b> optimal tools and practices → <b>Guide</b> practical implementation</span>
+            <p className="text-xl lg:text-2xl text-emerald-200 mb-4">
+              Navigate the AI coding revolution safely with expert guidance that prevents costly tool selection mistakes, security vulnerabilities, and implementation failures.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8 py-3">
@@ -133,6 +132,13 @@ export default function HomePage() {
                 <CardDescription className="text-base mb-6">
                   We evaluate your current development workflows, team capabilities, and technical infrastructure to identify optimal AI integration opportunities.
                 </CardDescription>
+                <ul className="text-sm text-slate-600 space-y-2 mb-2 text-left max-w-xs mx-auto">
+                  <li className="flex items-start"><CheckCircle className="h-4 w-4 text-emerald-600 mr-2 mt-1" />Team Readiness Evaluation – Assess current skills and identify training needs</li>
+                  <li className="flex items-start"><CheckCircle className="h-4 w-4 text-emerald-600 mr-2 mt-1" />Security Risk Analysis – Identify potential vulnerabilities before they become problems</li>
+                  <li className="flex items-start"><CheckCircle className="h-4 w-4 text-emerald-600 mr-2 mt-1" />Tool Compatibility Review – Evaluate which AI coding platforms work best with your existing tech stack</li>
+                  <li className="flex items-start"><CheckCircle className="h-4 w-4 text-emerald-600 mr-2 mt-1" />ROI Projection – Calculate expected productivity gains and cost savings</li>
+                  <li className="flex items-start"><CheckCircle className="h-4 w-4 text-emerald-600 mr-2 mt-1" />Implementation Timeline – Realistic roadmap based on your team's capacity</li>
+                </ul>
               </CardContent>
             </Card>
             <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
@@ -144,8 +150,15 @@ export default function HomePage() {
               </CardHeader>
               <CardContent className="text-center">
                 <CardDescription className="text-base mb-6">
-                  Based on our assessment, we recommend specific AI coding tools, practices, and implementation approaches tailored to your organization's needs and constraints.
+                  Based on our assessment, we recommend specific AI coding tools, security safeguards, and implementation approaches tailored to your organization's needs and constraints.
                 </CardDescription>
+                <ul className="text-sm text-slate-600 space-y-2 mb-2 text-left max-w-xs mx-auto">
+                  <li className="flex items-start"><CheckCircle className="h-4 w-4 text-emerald-600 mr-2 mt-1" />Optimal Tool Selection – Choose the right AI coding platforms for your specific requirements</li>
+                  <li className="flex items-start"><CheckCircle className="h-4 w-4 text-emerald-600 mr-2 mt-1" />Security Framework Design – Implement guardrails to prevent the security issues affecting 90% of unvetted AI code</li>
+                  <li className="flex items-start"><CheckCircle className="h-4 w-4 text-emerald-600 mr-2 mt-1" />Workflow Integration Strategy – Seamlessly blend AI tools with existing development processes</li>
+                  <li className="flex items-start"><CheckCircle className="h-4 w-4 text-emerald-600 mr-2 mt-1" />Team Training Plan – Customized learning paths for different skill levels and roles</li>
+                  <li className="flex items-start"><CheckCircle className="h-4 w-4 text-emerald-600 mr-2 mt-1" />Success Metrics Definition – Clear KPIs to measure adoption success and productivity gains</li>
+                </ul>
               </CardContent>
             </Card>
             <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
@@ -159,6 +172,13 @@ export default function HomePage() {
                 <CardDescription className="text-base mb-6">
                   We provide ongoing support and guidance as you adopt new AI development practices, ensuring smooth transitions and maximum benefit realization.
                 </CardDescription>
+                <ul className="text-sm text-slate-600 space-y-2 mb-2 text-left max-w-xs mx-auto">
+                  <li className="flex items-start"><CheckCircle className="h-4 w-4 text-emerald-600 mr-2 mt-1" />Phased Rollout Support – Gradual implementation that minimizes disruption</li>
+                  <li className="flex items-start"><CheckCircle className="h-4 w-4 text-emerald-600 mr-2 mt-1" />Real-time Problem Solving – Expert guidance when challenges arise during adoption</li>
+                  <li className="flex items-start"><CheckCircle className="h-4 w-4 text-emerald-600 mr-2 mt-1" />Performance Monitoring – Track productivity improvements and identify optimization opportunities</li>
+                  <li className="flex items-start"><CheckCircle className="h-4 w-4 text-emerald-600 mr-2 mt-1" />Best Practices Coaching – Ongoing mentorship to maximize AI coding effectiveness</li>
+                  <li className="flex items-start"><CheckCircle className="h-4 w-4 text-emerald-600 mr-2 mt-1" />Continuous Optimization – Regular reviews and adjustments to improve results over time</li>
+                </ul>
               </CardContent>
             </Card>
           </div>
