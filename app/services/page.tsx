@@ -46,80 +46,78 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Core Services */}
+      {/* Strategic Development Solutions */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Our Core Services</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Strategic Development Solutions</h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              Each service is tailored to deliver maximum impact for your specific business objectives
+              Comprehensive AI solutions to address every aspect of your digital transformation
             </p>
           </div>
 
           <div className="space-y-16">
-            {/* Service 1 */}
+            {/* Primary Service */}
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="flex items-center mb-6">
                   <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mr-4">
                     <Brain className="h-6 w-6 text-emerald-600" />
                   </div>
-                  <h3 className="text-3xl font-bold text-slate-900">Intelligent Risk Analytics</h3>
+                  <h3 className="text-3xl font-bold text-slate-900">AI Development Capability Assessment</h3>
                 </div>
                 <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                  Transform your risk management with AI-powered analytics that provide real-time insights, predictive
-                  modeling, and automated compliance monitoring. Our solutions help you stay ahead of market volatility
-                  and regulatory requirements.
+                  Our flagship service for understanding and planning your AI coding transformation
                 </p>
                 <div className="grid md:grid-cols-2 gap-4 mb-8">
                   <div className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-emerald-600 mr-3 mt-0.5 flex-shrink-0" />
                     <div>
-                      <div className="font-semibold text-slate-900">Real-time Risk Scoring</div>
-                      <div className="text-sm text-slate-600">Dynamic risk assessment across portfolios</div>
+                      <div className="font-semibold text-slate-900">Current Workflow Analysis</div>
+                      <div className="text-sm text-slate-600">Deep dive into your current development ecosystem</div>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-emerald-600 mr-3 mt-0.5 flex-shrink-0" />
                     <div>
-                      <div className="font-semibold text-slate-900">Predictive Modeling</div>
-                      <div className="text-sm text-slate-600">Forecast potential risks and opportunities</div>
+                      <div className="font-semibold text-slate-900">Team Capability Evaluation</div>
+                      <div className="text-sm text-slate-600">Assess team skills and strengths</div>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-emerald-600 mr-3 mt-0.5 flex-shrink-0" />
                     <div>
-                      <div className="font-semibold text-slate-900">Compliance Automation</div>
-                      <div className="text-sm text-slate-600">Automated regulatory reporting and monitoring</div>
+                      <div className="font-semibold text-slate-900">Infrastructure Assessment</div>
+                      <div className="text-sm text-slate-600">Evaluate your technology infrastructure</div>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-emerald-600 mr-3 mt-0.5 flex-shrink-0" />
                     <div>
-                      <div className="font-semibold text-slate-900">Stress Testing</div>
-                      <div className="text-sm text-slate-600">AI-enhanced scenario analysis</div>
+                      <div className="font-semibold text-slate-900">Strategic Roadmap Creation</div>
+                      <div className="text-sm text-slate-600">Plan your AI integration journey</div>
                     </div>
                   </div>
                 </div>
                 <Button className="bg-emerald-600 hover:bg-emerald-700">
-                  Learn More About Risk Analytics
+                  Learn More About Our Assessment Process
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>
               <div className="bg-slate-100 rounded-2xl p-8 h-96 flex items-center justify-center">
                 <div className="text-center text-slate-500">
                   <Brain className="h-24 w-24 mx-auto mb-4 opacity-50" />
-                  <p>Risk Analytics Dashboard Preview</p>
+                  <p>AI Development Capability Assessment</p>
                 </div>
               </div>
             </div>
 
-            {/* Service 2 */}
+            {/* Supporting Services */}
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="bg-slate-100 rounded-2xl p-8 h-96 flex items-center justify-center lg:order-1">
                 <div className="text-center text-slate-500">
                   <TrendingUp className="h-24 w-24 mx-auto mb-4 opacity-50" />
-                  <p>Market Intelligence Platform</p>
+                  <p>Tool Selection & Integration Consulting</p>
                 </div>
               </div>
               <div className="lg:order-2">
@@ -127,103 +125,99 @@ export default function ServicesPage() {
                   <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mr-4">
                     <TrendingUp className="h-6 w-6 text-emerald-600" />
                   </div>
-                  <h3 className="text-3xl font-bold text-slate-900">Market Intelligence</h3>
+                  <h3 className="text-3xl font-bold text-slate-900">Tool Selection & Integration Consulting</h3>
                 </div>
                 <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                  Gain competitive advantage with AI-powered market analysis that processes vast amounts of financial
-                  data, news, and market signals to identify trends, opportunities, and potential disruptions before
-                  they impact your business.
+                  Expert guidance on selecting the right AI tools and integrating them into your development ecosystem.
                 </p>
                 <div className="grid md:grid-cols-2 gap-4 mb-8">
                   <div className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-emerald-600 mr-3 mt-0.5 flex-shrink-0" />
                     <div>
-                      <div className="font-semibold text-slate-900">Trend Analysis</div>
-                      <div className="text-sm text-slate-600">AI-powered market trend identification</div>
+                      <div className="font-semibold text-slate-900">Tool Selection</div>
+                      <div className="text-sm text-slate-600">Identify suitable AI tools for your needs</div>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-emerald-600 mr-3 mt-0.5 flex-shrink-0" />
                     <div>
-                      <div className="font-semibold text-slate-900">Sentiment Monitoring</div>
-                      <div className="text-sm text-slate-600">Real-time market sentiment analysis</div>
+                      <div className="font-semibold text-slate-900">Integration Strategy</div>
+                      <div className="text-sm text-slate-600">Design an effective integration plan</div>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-emerald-600 mr-3 mt-0.5 flex-shrink-0" />
                     <div>
-                      <div className="font-semibold text-slate-900">Opportunity Scoring</div>
-                      <div className="text-sm text-slate-600">AI-ranked investment opportunities</div>
+                      <div className="font-semibold text-slate-900">Implementation Support</div>
+                      <div className="text-sm text-slate-600">Assist with tool deployment and integration</div>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-emerald-600 mr-3 mt-0.5 flex-shrink-0" />
                     <div>
-                      <div className="font-semibold text-slate-900">Competitive Intelligence</div>
-                      <div className="text-sm text-slate-600">Monitor competitor strategies and moves</div>
+                      <div className="font-semibold text-slate-900">Training</div>
+                      <div className="text-sm text-slate-600">Provide training and knowledge transfer</div>
                     </div>
                   </div>
                 </div>
                 <Button className="bg-emerald-600 hover:bg-emerald-700">
-                  Explore Market Intelligence
+                  Learn More About Tool Selection
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>
             </div>
 
-            {/* Service 3 */}
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
+              <div className="bg-slate-100 rounded-2xl p-8 h-96 flex items-center justify-center">
+                <div className="text-center text-slate-500">
+                  <Users className="h-24 w-24 mx-auto mb-4 opacity-50" />
+                  <p>Implementation Support & Training</p>
+                </div>
+              </div>
+              <div className="lg:order-2">
                 <div className="flex items-center mb-6">
                   <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mr-4">
                     <Users className="h-6 w-6 text-emerald-600" />
                   </div>
-                  <h3 className="text-3xl font-bold text-slate-900">Customer Intelligence</h3>
+                  <h3 className="text-3xl font-bold text-slate-900">Implementation Support & Training</h3>
                 </div>
                 <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                  Unlock the full potential of your customer relationships with AI-driven insights that reveal
-                  behavioral patterns, predict needs, and enable personalized experiences that drive loyalty and growth.
+                  Comprehensive support to ensure successful AI implementation and training for your team.
                 </p>
                 <div className="grid md:grid-cols-2 gap-4 mb-8">
                   <div className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-emerald-600 mr-3 mt-0.5 flex-shrink-0" />
                     <div>
-                      <div className="font-semibold text-slate-900">Behavioral Analytics</div>
-                      <div className="text-sm text-slate-600">Deep customer behavior analysis</div>
+                      <div className="font-semibold text-slate-900">Implementation Support</div>
+                      <div className="text-sm text-slate-600">Assist with project implementation</div>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-emerald-600 mr-3 mt-0.5 flex-shrink-0" />
                     <div>
-                      <div className="font-semibold text-slate-900">Personalization Engine</div>
-                      <div className="text-sm text-slate-600">AI-powered personalized experiences</div>
+                      <div className="font-semibold text-slate-900">Training</div>
+                      <div className="text-sm text-slate-600">Provide training and knowledge transfer</div>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-emerald-600 mr-3 mt-0.5 flex-shrink-0" />
                     <div>
-                      <div className="font-semibold text-slate-900">Churn Prediction</div>
-                      <div className="text-sm text-slate-600">Identify at-risk customers early</div>
+                      <div className="font-semibold text-slate-900">Continuous Learning</div>
+                      <div className="text-sm text-slate-600">Encourage ongoing learning and skill development</div>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-emerald-600 mr-3 mt-0.5 flex-shrink-0" />
                     <div>
-                      <div className="font-semibold text-slate-900">Lifetime Value Modeling</div>
-                      <div className="text-sm text-slate-600">Predict customer lifetime value</div>
+                      <div className="font-semibold text-slate-900">Knowledge Transfer</div>
+                      <div className="text-sm text-slate-600">Ensure knowledge retention and application</div>
                     </div>
                   </div>
                 </div>
                 <Button className="bg-emerald-600 hover:bg-emerald-700">
-                  Discover Customer Intelligence
+                  Learn More About Implementation Support
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
-              </div>
-              <div className="bg-slate-100 rounded-2xl p-8 h-96 flex items-center justify-center">
-                <div className="text-center text-slate-500">
-                  <Users className="h-24 w-24 mx-auto mb-4 opacity-50" />
-                  <p>Customer Intelligence Dashboard</p>
-                </div>
               </div>
             </div>
           </div>
@@ -331,12 +325,12 @@ export default function ServicesPage() {
       {/* CTA Section */}
       <section className="py-20 bg-emerald-600 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
+          <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Development Process?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            Let's discuss how our AI services can transform your business operations and drive growth.
+            Start with our comprehensive assessment to understand your AI coding potential and receive strategic recommendations.
           </p>
           <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
-            Schedule a Consultation
+            Schedule Your Assessment
           </Button>
         </div>
       </section>

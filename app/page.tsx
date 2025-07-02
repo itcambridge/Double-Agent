@@ -37,18 +37,17 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=800&width=1200')] opacity-10"></div>
         <div className="relative container mx-auto px-4 py-24 lg:py-32">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge className="mb-6 bg-emerald-600 hover:bg-emerald-700 text-white">AI-Powered Financial Services</Badge>
+            <Badge className="mb-6 bg-emerald-600 hover:bg-emerald-700 text-white">About Our Company</Badge>
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-              Transform Your Financial Operations with
-              <span className="text-emerald-400"> Intelligent AI</span>
+              Transforming Development Through Strategic AI Assessment
             </h1>
             <p className="text-xl lg:text-2xl text-slate-300 mb-8 leading-relaxed">
-              We deliver cutting-edge AI solutions that drive operational excellence, enhance decision-making, and
-              accelerate growth for financial services leaders.
+              We are software development veterans who help organizations navigate the AI coding revolution through expert assessment, strategic recommendations, and practical implementation guidance.<br/>
+              <span className="block mt-4">Our approach: <b>Assess</b> your current capabilities → <b>Recommend</b> optimal tools and practices → <b>Guide</b> practical implementation</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8 py-3">
-                Explore Our Services
+                Schedule Assessment
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button
@@ -56,242 +55,133 @@ export default function HomePage() {
                 variant="outline"
                 className="border-white text-white hover:bg-white hover:text-slate-900 text-lg px-8 py-3 bg-transparent"
               >
-                Schedule Consultation
+                Learn About Our Process
               </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Trust Indicators */}
-      <section className="py-16 bg-slate-50">
+      {/* Mission Section */}
+      <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Trusted by Industry Leaders</h2>
-            <p className="text-slate-600 max-w-2xl mx-auto">
-              We partner with forward-thinking financial institutions to deliver transformative AI solutions
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Our Mission</h2>
+            <p className="text-xl text-slate-600 leading-relaxed">
+              To bridge the gap between traditional development practices and AI-powered coding through expert assessment and strategic guidance, enabling organizations to adopt AI development tools effectively while maximizing team productivity and maintaining code quality.<br/>
+              <span className="block mt-4">We combine 60+ years of software development and infrastructure experience with cutting-edge AI coding expertise to help teams evolve their development practices thoughtfully and successfully.</span>
+            </p>
+            <div className="flex justify-center mt-8">
+              <div className="flex flex-col items-center">
+                <Brain className="h-12 w-12 text-emerald-600 mb-2" />
+                <span className="text-slate-500">Strategic Assessment</span>
+              </div>
+            </div>
+            <div className="mt-4 text-slate-500">Global Development Consulting</div>
+          </div>
+        </div>
+      </section>
+
+      {/* Impact Section */}
+      <section className="py-20 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Our Impact</h2>
+            <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+              Helping development teams worldwide successfully adopt AI coding practices
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-60">
+          <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="h-16 bg-slate-200 rounded-lg flex items-center justify-center mb-2">
-                <span className="font-bold text-slate-600">BANK A</span>
-              </div>
+              <div className="text-4xl font-bold text-emerald-600 mb-2">150+</div>
+              <div className="text-slate-600">Assessments Completed</div>
             </div>
             <div className="text-center">
-              <div className="h-16 bg-slate-200 rounded-lg flex items-center justify-center mb-2">
-                <span className="font-bold text-slate-600">FUND B</span>
-              </div>
+              <div className="text-4xl font-bold text-emerald-600 mb-2">85%</div>
+              <div className="text-slate-600">Implementation Success Rate</div>
             </div>
             <div className="text-center">
-              <div className="h-16 bg-slate-200 rounded-lg flex items-center justify-center mb-2">
-                <span className="font-bold text-slate-600">ASSET MGT C</span>
-              </div>
+              <div className="text-4xl font-bold text-emerald-600 mb-2">6x</div>
+              <div className="text-slate-600">Average Productivity Improvement</div>
             </div>
             <div className="text-center">
-              <div className="h-16 bg-slate-200 rounded-lg flex items-center justify-center mb-2">
-                <span className="font-bold text-slate-600">FINTECH D</span>
-              </div>
+              <div className="text-4xl font-bold text-emerald-600 mb-2">20+</div>
+              <div className="text-slate-600">Countries Served</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Preview */}
+      {/* Approach Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">Our AI Services</h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Comprehensive AI solutions designed specifically for financial services, from risk management to customer
-              intelligence
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">How We Help You Navigate AI Coding</h2>
+            <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+              Our proven methodology ensures your organization adopts AI coding practices effectively and sustainably.
             </p>
           </div>
-
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
               <CardHeader className="text-center pb-4">
                 <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-emerald-200 transition-colors">
-                  <Brain className="h-8 w-8 text-emerald-600" />
+                  <CheckCircle className="h-8 w-8 text-emerald-600" />
                 </div>
-                <CardTitle className="text-2xl">Intelligent Risk Analytics</CardTitle>
+                <CardTitle className="text-2xl">Comprehensive Assessment</CardTitle>
               </CardHeader>
               <CardContent className="text-center">
                 <CardDescription className="text-base mb-6">
-                  Advanced AI models for real-time risk assessment, portfolio optimization, and regulatory compliance
-                  monitoring.
+                  We evaluate your current development workflows, team capabilities, and technical infrastructure to identify optimal AI integration opportunities.
                 </CardDescription>
-                <ul className="text-sm text-slate-600 space-y-2 mb-6">
-                  <li className="flex items-center justify-center">
-                    <CheckCircle className="h-4 w-4 text-emerald-600 mr-2" />
-                    Real-time risk scoring
-                  </li>
-                  <li className="flex items-center justify-center">
-                    <CheckCircle className="h-4 w-4 text-emerald-600 mr-2" />
-                    Predictive analytics
-                  </li>
-                  <li className="flex items-center justify-center">
-                    <CheckCircle className="h-4 w-4 text-emerald-600 mr-2" />
-                    Compliance automation
-                  </li>
-                </ul>
-                <Button
-                  variant="outline"
-                  className="group-hover:bg-emerald-600 group-hover:text-white transition-colors bg-transparent"
-                >
-                  Learn More
-                </Button>
               </CardContent>
             </Card>
-
             <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
               <CardHeader className="text-center pb-4">
                 <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-emerald-200 transition-colors">
                   <TrendingUp className="h-8 w-8 text-emerald-600" />
                 </div>
-                <CardTitle className="text-2xl">Market Intelligence</CardTitle>
+                <CardTitle className="text-2xl">Strategic Recommendations</CardTitle>
               </CardHeader>
               <CardContent className="text-center">
                 <CardDescription className="text-base mb-6">
-                  AI-powered market analysis, trend prediction, and investment opportunity identification for superior
-                  decision-making.
+                  Based on our assessment, we recommend specific AI coding tools, practices, and implementation approaches tailored to your organization's needs and constraints.
                 </CardDescription>
-                <ul className="text-sm text-slate-600 space-y-2 mb-6">
-                  <li className="flex items-center justify-center">
-                    <CheckCircle className="h-4 w-4 text-emerald-600 mr-2" />
-                    Market trend analysis
-                  </li>
-                  <li className="flex items-center justify-center">
-                    <CheckCircle className="h-4 w-4 text-emerald-600 mr-2" />
-                    Sentiment monitoring
-                  </li>
-                  <li className="flex items-center justify-center">
-                    <CheckCircle className="h-4 w-4 text-emerald-600 mr-2" />
-                    Opportunity scoring
-                  </li>
-                </ul>
-                <Button
-                  variant="outline"
-                  className="group-hover:bg-emerald-600 group-hover:text-white transition-colors bg-transparent"
-                >
-                  Learn More
-                </Button>
               </CardContent>
             </Card>
-
             <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
               <CardHeader className="text-center pb-4">
                 <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-emerald-200 transition-colors">
                   <Users className="h-8 w-8 text-emerald-600" />
                 </div>
-                <CardTitle className="text-2xl">Customer Intelligence</CardTitle>
+                <CardTitle className="text-2xl">Implementation Guidance</CardTitle>
               </CardHeader>
               <CardContent className="text-center">
                 <CardDescription className="text-base mb-6">
-                  Deep customer insights through AI-driven behavioral analysis, personalization engines, and churn
-                  prediction models.
+                  We provide ongoing support and guidance as you adopt new AI development practices, ensuring smooth transitions and maximum benefit realization.
                 </CardDescription>
-                <ul className="text-sm text-slate-600 space-y-2 mb-6">
-                  <li className="flex items-center justify-center">
-                    <CheckCircle className="h-4 w-4 text-emerald-600 mr-2" />
-                    Behavioral analytics
-                  </li>
-                  <li className="flex items-center justify-center">
-                    <CheckCircle className="h-4 w-4 text-emerald-600 mr-2" />
-                    Personalization AI
-                  </li>
-                  <li className="flex items-center justify-center">
-                    <CheckCircle className="h-4 w-4 text-emerald-600 mr-2" />
-                    Churn prediction
-                  </li>
-                </ul>
-                <Button
-                  variant="outline"
-                  className="group-hover:bg-emerald-600 group-hover:text-white transition-colors bg-transparent"
-                >
-                  Learn More
-                </Button>
               </CardContent>
             </Card>
           </div>
-        </div>
-      </section>
-
-      {/* Results Section */}
-      <section className="py-20 bg-slate-900 text-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Proven Results</h2>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              Our AI solutions deliver measurable impact across key business metrics
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-emerald-400 mb-2">85%</div>
-              <div className="text-slate-300">Risk Detection Improvement</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-emerald-400 mb-2">60%</div>
-              <div className="text-slate-300">Operational Cost Reduction</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-emerald-400 mb-2">40%</div>
-              <div className="text-slate-300">Faster Decision Making</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-emerald-400 mb-2">95%</div>
-              <div className="text-slate-300">Client Satisfaction Rate</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonial */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <Card className="max-w-4xl mx-auto border-0 shadow-xl">
-            <CardContent className="p-12 text-center">
-              <div className="flex justify-center mb-6">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-6 w-6 text-yellow-400 fill-current" />
-                ))}
-              </div>
-              <blockquote className="text-2xl font-medium text-slate-700 mb-8 leading-relaxed">
-                "The AI risk analytics platform has transformed how we approach portfolio management. We've seen a 40%
-                improvement in risk-adjusted returns and significantly enhanced our regulatory compliance capabilities."
-              </blockquote>
-              <div className="flex items-center justify-center">
-                <div className="w-16 h-16 bg-slate-200 rounded-full mr-4"></div>
-                <div className="text-left">
-                  <div className="font-semibold text-slate-900">Sarah Chen</div>
-                  <div className="text-slate-600">Chief Risk Officer, Global Asset Management</div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
         </div>
       </section>
 
       {/* CTA Section */}
       <section className="py-20 bg-emerald-600 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-4">Ready to Transform Your Operations?</h2>
+          <h2 className="text-4xl font-bold mb-4">Ready to Assess Your AI Development Potential?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            Schedule a consultation with our AI experts to discover how we can accelerate your digital transformation
-            journey.
+            Let's evaluate how AI coding can transform your development process while maintaining quality and team effectiveness.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
-              Schedule Consultation
+              Schedule Assessment
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-emerald-600 text-lg px-8 py-3 bg-transparent"
             >
-              Download Case Studies
+              Learn About Our Process
             </Button>
           </div>
         </div>

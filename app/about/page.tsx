@@ -36,137 +36,69 @@ export default function AboutPage() {
       <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge className="mb-6 bg-emerald-600 hover:bg-emerald-700">About Our Company</Badge>
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6">Pioneering AI Innovation in Financial Services</h1>
+            <Badge className="mb-6 bg-emerald-600 hover:bg-emerald-700">About Double Agent</Badge>
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6">Strategic AI Development Consulting</h1>
             <p className="text-xl text-slate-300 leading-relaxed">
-              We are a team of AI experts, financial professionals, and technology leaders dedicated to transforming how
-              financial institutions operate and compete in the digital age.
+              We are software development veterans with six decades of combined experience, specializing in helping organizations successfully navigate the transition to AI-powered development practices.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Mission & Vision */}
+      {/* Our Story Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-3xl font-bold text-slate-900 mb-6">Our Mission</h2>
-              <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                To empower financial services leaders with cutting-edge AI solutions that drive operational excellence,
-                enhance decision-making, and create sustainable competitive advantages in an increasingly complex market
-                landscape.
-              </p>
-              <p className="text-lg text-slate-600 leading-relaxed">
-                We believe that the future of finance lies in the intelligent application of AI technologies, and we're
-                committed to making that future accessible to organizations of all sizes.
-              </p>
-            </div>
-            <div className="bg-slate-100 rounded-2xl p-8 h-96 flex items-center justify-center">
-              <div className="text-center text-slate-500">
-                <Globe className="h-24 w-24 mx-auto mb-4 opacity-50" />
-                <p>Global AI Innovation</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="py-20 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Our Impact</h2>
-            <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              Trusted by leading financial institutions worldwide to deliver transformative AI solutions
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Bridging Traditional Development and AI Innovation</h2>
+            <p className="text-xl text-slate-600 leading-relaxed">
+              The software development landscape is undergoing its most significant transformation in decades. AI coding tools offer unprecedented opportunities for productivity gains, but successful adoption requires strategic thinking, careful planning, and expert guidance.<br/>
+              <span className="block mt-4">Double Agent was founded to help organizations navigate this transition successfully. We combine deep traditional development expertise with cutting-edge AI coding knowledge to provide practical, results-driven consulting services.</span>
             </p>
           </div>
-
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-emerald-600 mb-2">50+</div>
-              <div className="text-slate-600">Global Clients</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-emerald-600 mb-2">$2B+</div>
-              <div className="text-slate-600">Assets Under Management</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-emerald-600 mb-2">95%</div>
-              <div className="text-slate-600">Client Retention Rate</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-emerald-600 mb-2">15+</div>
-              <div className="text-slate-600">Countries Served</div>
-            </div>
-          </div>
         </div>
       </section>
 
-      {/* Leadership Team */}
+      {/* Leadership Team Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-4">Leadership Team</h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              Our leadership combines deep financial services expertise with cutting-edge AI knowledge
+              Six decades of software development expertise focused on practical AI adoption strategies
             </p>
           </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             <Card className="border-0 shadow-lg text-center">
               <CardHeader>
                 <div className="w-24 h-24 bg-slate-200 rounded-full mx-auto mb-4"></div>
-                <CardTitle className="text-xl">Dr. Sarah Chen</CardTitle>
+                <CardTitle className="text-xl">Viv Austin</CardTitle>
                 <CardDescription className="text-emerald-600 font-semibold">Chief Executive Officer</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-slate-600 mb-4">
-                  Former VP of AI Strategy at Goldman Sachs with 15+ years in financial technology. PhD in Machine
-                  Learning from Stanford.
+                  30 years of software development experience in the banking sector, progressing to Director level with deep expertise in enterprise-scale development practices, team leadership, and technology transformation initiatives.
                 </p>
                 <div className="flex flex-wrap gap-2 justify-center">
-                  <Badge variant="secondary">AI Strategy</Badge>
-                  <Badge variant="secondary">FinTech</Badge>
-                  <Badge variant="secondary">Leadership</Badge>
+                  <Badge variant="secondary">Enterprise Development</Badge>
+                  <Badge variant="secondary">Banking Technology</Badge>
+                  <Badge variant="secondary">Team Leadership</Badge>
                 </div>
               </CardContent>
             </Card>
-
             <Card className="border-0 shadow-lg text-center">
               <CardHeader>
                 <div className="w-24 h-24 bg-slate-200 rounded-full mx-auto mb-4"></div>
-                <CardTitle className="text-xl">Michael Rodriguez</CardTitle>
+                <CardTitle className="text-xl">Mark Austin</CardTitle>
                 <CardDescription className="text-emerald-600 font-semibold">Chief Technology Officer</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-slate-600 mb-4">
-                  Former Principal Engineer at Microsoft Azure AI. Expert in large-scale AI systems and cloud
-                  architecture with 12+ years experience.
+                  30 years of IT infrastructure experience as an Infrastructure Architect, with specialized focus on AI coding methodologies and iterative architecture development over the past year.
                 </p>
                 <div className="flex flex-wrap gap-2 justify-center">
-                  <Badge variant="secondary">AI Engineering</Badge>
-                  <Badge variant="secondary">Cloud</Badge>
-                  <Badge variant="secondary">Scalability</Badge>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-0 shadow-lg text-center">
-              <CardHeader>
-                <div className="w-24 h-24 bg-slate-200 rounded-full mx-auto mb-4"></div>
-                <CardTitle className="text-xl">Emma Thompson</CardTitle>
-                <CardDescription className="text-emerald-600 font-semibold">Chief Operating Officer</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-slate-600 mb-4">
-                  Former Managing Director at JPMorgan Chase with expertise in risk management and regulatory
-                  compliance. MBA from Wharton.
-                </p>
-                <div className="flex flex-wrap gap-2 justify-center">
-                  <Badge variant="secondary">Risk Management</Badge>
-                  <Badge variant="secondary">Compliance</Badge>
-                  <Badge variant="secondary">Operations</Badge>
+                  <Badge variant="secondary">Infrastructure Architecture</Badge>
+                  <Badge variant="secondary">AI Development Practices</Badge>
+                  <Badge variant="secondary">System Integration</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -174,43 +106,89 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Values */}
+      {/* Our Approach Section */}
       <section className="py-20 bg-slate-900 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">Our Values</h2>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto">The principles that guide everything we do</p>
+            <h2 className="text-3xl font-bold mb-4">Why Assessment-First Works</h2>
+            <p className="text-xl text-slate-300 max-w-3xl mx-auto">Many organizations rush into AI tool adoption without proper evaluation, leading to poor tool selection, workflow disruption, and suboptimal results. Our assessment-first approach ensures:</p>
           </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Award className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-4">Excellence</h3>
+              <h3 className="text-xl font-bold mb-4">Strategic Foundation</h3>
               <p className="text-slate-300">
-                We strive for excellence in every solution we deliver, ensuring our clients receive the highest quality
-                AI implementations.
+                Thorough understanding of your current capabilities before recommending changes
               </p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Users className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-4">Partnership</h3>
+              <h3 className="text-xl font-bold mb-4">Tailored Solutions</h3>
               <p className="text-slate-300">
-                We believe in true partnership with our clients, working collaboratively to achieve shared success and
-                long-term value.
+                Tool and practice recommendations specific to your team, technology, and business requirements
               </p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <TrendingUp className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-4">Innovation</h3>
+              <h3 className="text-xl font-bold mb-4">Minimized Risk</h3>
               <p className="text-slate-300">
-                We continuously push the boundaries of what's possible with AI, staying at the forefront of
-                technological advancement.
+                Careful evaluation of potential challenges and mitigation strategies before implementation
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Globe className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold mb-4">Measurable Success</h3>
+              <p className="text-slate-300">
+                Clear metrics and success criteria established from the beginning
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Global Reach Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Global Consulting, Local Understanding</h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Based near London, we serve clients worldwide through remote consulting engagements. Our approach is designed for distributed collaboration, enabling us to work effectively with teams regardless of geographic location.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Globe className="h-8 w-8 text-emerald-600" />
+              </div>
+              <h3 className="text-xl font-bold mb-4">Remote Assessment & Consulting</h3>
+              <p className="text-slate-600">
+                Flexible scheduling across time zones and digital-first documentation and reporting.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Users className="h-8 w-8 text-emerald-600" />
+              </div>
+              <h3 className="text-xl font-bold mb-4">Ongoing Support</h3>
+              <p className="text-slate-600">
+                Ongoing support regardless of location, ensuring your team's success throughout the AI adoption journey.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Award className="h-8 w-8 text-emerald-600" />
+              </div>
+              <h3 className="text-xl font-bold mb-4">Digital Collaboration</h3>
+              <p className="text-slate-600">
+                Service delivery designed for distributed teams and digital collaboration.
               </p>
             </div>
           </div>

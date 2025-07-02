@@ -36,6 +36,12 @@ This document outlines the full implementation plan for building the AI-powered 
 
 
 
+\### Step 0: Content Alignment & Review
+
+\- Review and refine all site content to ensure it aligns with business goals, value proposition, and target audience. Update copy, headings, and messaging for clarity and impact.
+
+
+
 \### Step 1: Define Site Structure
 
 \- [x] Home

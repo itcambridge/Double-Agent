@@ -45,10 +45,9 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-6 bg-emerald-600 hover:bg-emerald-700">Get In Touch</Badge>
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6">Let's Discuss Your AI Transformation</h1>
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6">Schedule Your AI Development Assessment</h1>
             <p className="text-xl text-slate-300 leading-relaxed">
-              Ready to explore how AI can transform your financial operations? Our experts are here to help you navigate
-              your digital transformation journey.
+              Ready to understand how AI coding can transform your development process? Let's evaluate your current capabilities and create a strategic roadmap for successful AI adoption.
             </p>
           </div>
         </div>
@@ -153,6 +152,41 @@ export default function ContactPage() {
                 </p>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Assessment Process FAQ</h2>
+            <p className="text-lg text-slate-600">Frequently asked questions about our assessment process and what to expect.</p>
+          </div>
+          <div className="max-w-3xl mx-auto space-y-8">
+            <div className="bg-white rounded-lg shadow p-6">
+              <h3 className="font-semibold text-lg mb-2">What happens during the initial assessment?</h3>
+              <p className="text-slate-700">Our comprehensive assessment includes evaluation of your current development workflows, team capabilities, tool chains, and identification of optimal AI coding integration opportunities. We provide detailed recommendations and implementation roadmaps.</p>
+            </div>
+            <div className="bg-white rounded-lg shadow p-6">
+              <h3 className="font-semibold text-lg mb-2">How long does an assessment take?</h3>
+              <p className="text-slate-700">Initial assessments typically require 2-3 days of collaborative evaluation, followed by 1 week for analysis and report preparation. We'll provide a detailed timeline during our first consultation.</p>
+            </div>
+            <div className="bg-white rounded-lg shadow p-6">
+              <h3 className="font-semibold text-lg mb-2">What if we're not ready for AI coding yet?</h3>
+              <p className="text-slate-700">Perfect! Part of our assessment determines readiness and identifies any preparatory steps needed. We'll recommend the optimal timing and approach for your specific situation.</p>
+            </div>
+            <div className="bg-white rounded-lg shadow p-6">
+              <h3 className="font-semibold text-lg mb-2">Do you work with teams new to AI development?</h3>
+              <p className="text-slate-700">Absolutely. Most of our clients are beginning their AI coding journey. Our assessment helps identify the best starting points and learning paths for teams at any experience level.</p>
+            </div>
+            <div className="bg-white rounded-lg shadow p-6">
+              <h3 className="font-semibold text-lg mb-2">Can you assess remote or distributed teams?</h3>
+              <p className="text-slate-700">Yes, our assessment process is designed for remote collaboration. We work effectively with distributed teams worldwide and can accommodate various time zones and working arrangements.</p>
+            </div>
+            <div className="bg-white rounded-lg shadow p-6">
+              <h3 className="font-semibold text-lg mb-2">What's included in the assessment deliverables?</h3>
+              <p className="text-slate-700">You receive a comprehensive report including current state analysis, tool recommendations, implementation roadmap, risk assessment, training recommendations, and success metrics framework.</p>
+            </div>
           </div>
         </div>
       </section>

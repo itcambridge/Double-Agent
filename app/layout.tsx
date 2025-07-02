@@ -11,7 +11,8 @@ export const metadata: Metadata = {
   title: "AI Services - Transform Your Financial Operations",
   description:
     "Cutting-edge AI solutions for financial services. Risk analytics, market intelligence, and customer insights for director-level decision makers.",
-    generator: 'v0.dev'
+  generator: 'v0.dev',
+  metadataBase: new URL('https://double-agent.co.uk'),
 }
 
 export default function RootLayout({
