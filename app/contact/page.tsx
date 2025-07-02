@@ -9,6 +9,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Badge } from "@/components/ui/badge"
 import { Mail, Phone, MapPin, Clock, Send } from "lucide-react"
+import ContactForm from "@/components/ContactForm"
 
 export const metadata = {
   title: "Contact | Double Agent AI Services",
@@ -37,26 +38,6 @@ export const metadata = {
 };
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    company: "",
-    role: "",
-    service: "",
-    message: "",
-  })
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission here
-    console.log("Form submitted:", formData)
-  }
-
-  const handleInputChange = (field: string, value: string) => {
-    setFormData((prev) => ({ ...prev, [field]: value }))
-  }
-
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -79,189 +60,45 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-3 gap-12">
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <Card className="border-0 shadow-xl">
-                <CardHeader>
-                  <CardTitle className="text-2xl">Schedule a Consultation</CardTitle>
-                  <CardDescription>
-                    Fill out the form below and we'll get back to you within 24 hours to discuss your needs.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="grid md:grid-cols-2 gap-4">
-                      <div className="space-y-2">
-                        <Label htmlFor="firstName">First Name *</Label>
-                        <Input
-                          id="firstName"
-                          value={formData.firstName}
-                          onChange={(e) => handleInputChange("firstName", e.target.value)}
-                          required
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="lastName">Last Name *</Label>
-                        <Input
-                          id="lastName"
-                          value={formData.lastName}
-                          onChange={(e) => handleInputChange("lastName", e.target.value)}
-                          required
-                        />
-                      </div>
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="email">Email Address *</Label>
-                      <Input
-                        id="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={(e) => handleInputChange("email", e.target.value)}
-                        required
-                      />
-                    </div>
-
-                    <div className="grid md:grid-cols-2 gap-4">
-                      <div className="space-y-2">
-                        <Label htmlFor="company">Company *</Label>
-                        <Input
-                          id="company"
-                          value={formData.company}
-                          onChange={(e) => handleInputChange("company", e.target.value)}
-                          required
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="role">Your Role *</Label>
-                        <Select onValueChange={(value) => handleInputChange("role", value)}>
-                          <SelectTrigger>
-                            <SelectValue placeholder="Select your role" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="ceo">CEO/President</SelectItem>
-                            <SelectItem value="cto">CTO/Technology Director</SelectItem>
-                            <SelectItem value="cfo">CFO/Finance Director</SelectItem>
-                            <SelectItem value="cro">CRO/Risk Director</SelectItem>
-                            <SelectItem value="vp">VP/Senior Manager</SelectItem>
-                            <SelectItem value="director">Director</SelectItem>
-                            <SelectItem value="manager">Manager</SelectItem>
-                            <SelectItem value="other">Other</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      </div>
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="service">Service Interest</Label>
-                      <Select onValueChange={(value) => handleInputChange("service", value)}>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select a service" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="risk-analytics">Intelligent Risk Analytics</SelectItem>
-                          <SelectItem value="market-intelligence">Market Intelligence</SelectItem>
-                          <SelectItem value="customer-intelligence">Customer Intelligence</SelectItem>
-                          <SelectItem value="fraud-detection">Fraud Detection</SelectItem>
-                          <SelectItem value="process-automation">Process Automation</SelectItem>
-                          <SelectItem value="consulting">Strategic Consulting</SelectItem>
-                          <SelectItem value="multiple">Multiple Services</SelectItem>
-                          <SelectItem value="not-sure">Not Sure Yet</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="message">Message</Label>
-                      <Textarea
-                        id="message"
-                        placeholder="Tell us about your current challenges and what you'd like to achieve with AI..."
-                        value={formData.message}
-                        onChange={(e) => handleInputChange("message", e.target.value)}
-                        rows={5}
-                      />
-                    </div>
-
-                    <Button type="submit" size="lg" className="w-full bg-emerald-600 hover:bg-emerald-700">
-                      Send Message
-                      <Send className="ml-2 h-4 w-4" />
-                    </Button>
-                  </form>
-                </CardContent>
-              </Card>
+              <ContactForm />
             </div>
 
             {/* Contact Information */}
             <div className="space-y-8">
-              <Card className="border-0 shadow-lg">
-                <CardHeader>
-                  <CardTitle className="text-xl">Contact Information</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  <div className="flex items-start space-x-3">
-                    <Mail className="h-5 w-5 text-emerald-600 mt-1" />
-                    <div>
-                      <div className="font-semibold">Email</div>
-                      <div className="text-slate-600">hello@aiservices.com</div>
+              <div className="border-0 shadow-lg bg-white rounded-lg p-8">
+                <div className="flex items-start space-x-3 mb-6">
+                  <Mail className="h-5 w-5 text-emerald-600 mt-1" />
+                  <div>
+                    <div className="font-semibold">Email</div>
+                    <div className="text-slate-600">hello@aiservices.com</div>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3 mb-6">
+                  <Phone className="h-5 w-5 text-emerald-600 mt-1" />
+                  <div>
+                    <div className="font-semibold">Phone</div>
+                    <div className="text-slate-600">+1 (555) 123-4567</div>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3 mb-6">
+                  <MapPin className="h-5 w-5 text-emerald-600 mt-1" />
+                  <div>
+                    <div className="font-semibold">Address</div>
+                    <div className="text-slate-600">
+                      123 Financial District
+                      <br />
+                      New York, NY 10004
                     </div>
                   </div>
-                  <div className="flex items-start space-x-3">
-                    <Phone className="h-5 w-5 text-emerald-600 mt-1" />
-                    <div>
-                      <div className="font-semibold">Phone</div>
-                      <div className="text-slate-600">+1 (555) 123-4567</div>
-                    </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Clock className="h-5 w-5 text-emerald-600 mt-1" />
+                  <div>
+                    <div className="font-semibold">Business Hours</div>
+                    <div className="text-slate-600">Mon–Fri: 9am–6pm EST</div>
                   </div>
-                  <div className="flex items-start space-x-3">
-                    <MapPin className="h-5 w-5 text-emerald-600 mt-1" />
-                    <div>
-                      <div className="font-semibold">Address</div>
-                      <div className="text-slate-600">
-                        123 Financial District
-                        <br />
-                        New York, NY 10004
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <Clock className="h-5 w-5 text-emerald-600 mt-1" />
-                    <div>
-                      <div className="font-semibold">Business Hours</div>
-                      <div className="text-slate-600">
-                        Mon - Fri: 9:00 AM - 6:00 PM EST
-                        <br />
-                        Sat - Sun: Closed
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="border-0 shadow-lg bg-emerald-50">
-                <CardHeader>
-                  <CardTitle className="text-xl text-emerald-800">Quick Response Guarantee</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-emerald-700">
-                    We understand that time is critical in financial services. That's why we guarantee a response to all
-                    inquiries within 24 hours, and often much sooner.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-0 shadow-lg">
-                <CardHeader>
-                  <CardTitle className="text-xl">Prefer to Call?</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-slate-600 mb-4">
-                    Speak directly with one of our AI consultants to discuss your needs and explore how we can help
-                    transform your operations.
-                  </p>
-                  <Button variant="outline" className="w-full bg-transparent">
-                    <Phone className="mr-2 h-4 w-4" />
-                    Schedule a Call
-                  </Button>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             </div>
           </div>
         </div>
