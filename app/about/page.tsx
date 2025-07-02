@@ -3,6 +3,32 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Users, Award, Globe, TrendingUp } from "lucide-react"
 
+export const metadata = {
+  title: "About | Double Agent AI Services",
+  description: "Meet the team pioneering AI innovation in financial services. Learn about our mission, vision, and leadership.",
+  robots: "index, follow",
+  openGraph: {
+    title: "About | Double Agent AI Services",
+    description: "Meet the team pioneering AI innovation in financial services. Learn about our mission, vision, and leadership.",
+    url: "https://double-agent.co.uk/about",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "About | Double Agent AI Services",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About | Double Agent AI Services",
+    description: "Meet the team pioneering AI innovation in financial services. Learn about our mission, vision, and leadership.",
+    images: ["/og-image.png"],
+  },
+};
+
 export default function AboutPage() {
   return (
     <div className="min-h-screen">

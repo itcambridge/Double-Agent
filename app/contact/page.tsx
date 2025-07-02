@@ -12,6 +12,32 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Badge } from "@/components/ui/badge"
 import { Mail, Phone, MapPin, Clock, Send } from "lucide-react"
 
+export const metadata = {
+  title: "Contact | Double Agent AI Services",
+  description: "Contact our AI experts to discuss your digital transformation. Schedule a consultation for AI-powered financial solutions.",
+  robots: "index, follow",
+  openGraph: {
+    title: "Contact | Double Agent AI Services",
+    description: "Contact our AI experts to discuss your digital transformation. Schedule a consultation for AI-powered financial solutions.",
+    url: "https://double-agent.co.uk/contact",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Contact | Double Agent AI Services",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact | Double Agent AI Services",
+    description: "Contact our AI experts to discuss your digital transformation. Schedule a consultation for AI-powered financial solutions.",
+    images: ["/og-image.png"],
+  },
+};
+
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     firstName: "",

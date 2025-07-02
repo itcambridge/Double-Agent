@@ -3,6 +3,32 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Brain, TrendingUp, Users, Shield, Zap, Target, ArrowRight, CheckCircle } from "lucide-react"
 
+export const metadata = {
+  title: "AI Software Services | Double Agent",
+  description: "Comprehensive AI services for financial leaders. Risk analytics, market intelligence, and customer insights for director-level decision makers.",
+  robots: "index, follow",
+  openGraph: {
+    title: "AI Systems for CTOs | Double Agent",
+    description: "Modern software architecture built with AI. We help directors build better, faster.",
+    url: "https://double-agent.co.uk/services",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "AI Systems for CTOs | Double Agent",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI Systems for CTOs | Double Agent",
+    description: "Build secure, scalable software with our agentic architecture.",
+    images: ["/og-image.png"],
+  },
+};
+
 export default function ServicesPage() {
   return (
     <div className="min-h-screen">

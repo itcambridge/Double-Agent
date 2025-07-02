@@ -1,3 +1,29 @@
+export const metadata = {
+  title: "AI Services - Transform Your Financial Operations | Double Agent",
+  description: "Cutting-edge AI solutions for financial services. Risk analytics, market intelligence, and customer insights for director-level decision makers.",
+  robots: "index, follow",
+  openGraph: {
+    title: "AI Services - Transform Your Financial Operations | Double Agent",
+    description: "Cutting-edge AI solutions for financial services. Risk analytics, market intelligence, and customer insights for director-level decision makers.",
+    url: "https://double-agent.co.uk/",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "AI Services - Transform Your Financial Operations | Double Agent",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI Services - Transform Your Financial Operations | Double Agent",
+    description: "Cutting-edge AI solutions for financial services. Risk analytics, market intelligence, and customer insights for director-level decision makers.",
+    images: ["/og-image.png"],
+  },
+};
+
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
