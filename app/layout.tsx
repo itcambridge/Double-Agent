@@ -8,11 +8,16 @@ import { Footer } from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "AI Services - Transform Your Financial Operations",
+  title: "Double Agent - Strategic AI Development Consulting",
   description:
-    "Cutting-edge AI solutions for financial services. Risk analytics, market intelligence, and customer insights for director-level decision makers.",
+    "Strategic AI development consulting with an assessment-first approach. Risk mitigation, strategic planning, and implementation for director-level decision makers.",
   generator: 'v0.dev',
   metadataBase: new URL('https://double-agent.co.uk'),
+  icons: {
+    icon: '/double-agent-logo.png',
+    shortcut: '/double-agent-logo.png',
+    apple: '/double-agent-logo.png',
+  },
 }
 
 export default function RootLayout({
