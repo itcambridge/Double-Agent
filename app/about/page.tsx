@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -70,7 +71,15 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="border-0 shadow-lg text-center">
               <CardHeader>
-                <div className="w-24 h-24 bg-slate-200 rounded-full mx-auto mb-4"></div>
+                <div className="w-24 h-24 mx-auto mb-4">
+                  <Image
+                    src="/CEO.png"
+                    alt="Viv Austin - Chief Executive Officer"
+                    width={96}
+                    height={96}
+                    className="w-24 h-24 rounded-full object-cover"
+                  />
+                </div>
                 <CardTitle className="text-xl">Viv Austin</CardTitle>
                 <CardDescription className="text-emerald-600 font-semibold">Chief Executive Officer</CardDescription>
               </CardHeader>
@@ -87,7 +96,15 @@ export default function AboutPage() {
             </Card>
             <Card className="border-0 shadow-lg text-center">
               <CardHeader>
-                <div className="w-24 h-24 bg-slate-200 rounded-full mx-auto mb-4"></div>
+                <div className="w-24 h-24 mx-auto mb-4">
+                  <Image
+                    src="/CTO.png"
+                    alt="Mark Austin - Chief Technology Officer"
+                    width={96}
+                    height={96}
+                    className="w-24 h-24 rounded-full object-cover"
+                  />
+                </div>
                 <CardTitle className="text-xl">Mark Austin</CardTitle>
                 <CardDescription className="text-emerald-600 font-semibold">Chief Technology Officer</CardDescription>
               </CardHeader>
