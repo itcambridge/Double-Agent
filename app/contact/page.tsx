@@ -69,14 +69,14 @@ export default function ContactPage() {
                   <Mail className="h-5 w-5 text-emerald-600 mt-1" />
                   <div>
                     <div className="font-semibold">Email</div>
-                    <div className="text-slate-600">hello@aiservices.com</div>
+                    <div className="text-slate-600">hello@double-agent.co.uk</div>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3 mb-6">
                   <Phone className="h-5 w-5 text-emerald-600 mt-1" />
                   <div>
                     <div className="font-semibold">Phone</div>
-                    <div className="text-slate-600">+1 (555) 123-4567</div>
+                    <div className="text-slate-600">0203 883 4544</div>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3 mb-6">

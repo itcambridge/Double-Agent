@@ -38,8 +38,8 @@ export function Footer() {
             <ul className="space-y-2 text-slate-300 text-sm">
               <li><Link href="/about">About Us</Link></li>
               <li><Link href="/contact">Contact</Link></li>
-              <li><span className="text-slate-400 cursor-not-allowed">Privacy Policy (coming soon)</span></li>
-              <li><span className="text-slate-400 cursor-not-allowed">Terms of Service (coming soon)</span></li>
+              <li><Link href="/privacy">Privacy Policy</Link></li>
+              <li><Link href="/terms">Terms of Service</Link></li>
             </ul>
           </div>
 
@@ -47,8 +47,8 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-slate-300 text-sm">
-              <li className="flex items-center space-x-2"><Mail className="h-4 w-4 text-emerald-400" /><span>hello@doubleagent.co.uk</span></li>
-              <li className="flex items-center space-x-2"><Phone className="h-4 w-4 text-emerald-400" /><span>+44 (0) 20 7123 4567</span></li>
+              <li className="flex items-center space-x-2"><Mail className="h-4 w-4 text-emerald-400" /><span>hello@double-agent.co.uk</span></li>
+              <li className="flex items-center space-x-2"><Phone className="h-4 w-4 text-emerald-400" /><span>0203 883 4544</span></li>
               <li className="flex items-center space-x-2"><MapPin className="h-4 w-4 text-emerald-400" /><span>London, UK</span></li>
               <li><span className="text-slate-400">Serving clients globally via remote consulting</span></li>
             </ul>

@@ -321,7 +321,7 @@ export default function AboutPage() {
                     <Mail className="h-6 w-6 text-white" />
                   </div>
                   <CardTitle>Email</CardTitle>
-                  <CardDescription>hello@doubleagent.co.uk</CardDescription>
+                  <CardDescription>hello@double-agent.co.uk</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-slate-600">Response Time: Within 4 business hours</p>
@@ -334,7 +334,7 @@ export default function AboutPage() {
                     <Phone className="h-6 w-6 text-white" />
                   </div>
                   <CardTitle>Phone</CardTitle>
-                  <CardDescription>+44 (0) 20 7123 4567</CardDescription>
+                  <CardDescription>0203 883 4544</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-slate-600">UK Time: Monday-Friday, 9am-6pm GMT</p>
@@ -690,7 +690,7 @@ export default function AboutPage() {
             </Button>
           </div>
           <p className="text-lg">
-            Questions? Call <span className="font-semibold">+44 (0) 20 7123 4567</span> or email <span className="font-semibold">hello@doubleagent.co.uk</span>
+            Questions? Call <span className="font-semibold">0203 883 4544</span> or email <span className="font-semibold">hello@double-agent.co.uk</span>
           </p>
         </div>
       </section>

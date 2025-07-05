@@ -6,7 +6,9 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Checkbox } from "@/components/ui/checkbox";
 import { Send } from "lucide-react";
+import Link from "next/link";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -20,6 +22,7 @@ export default function ContactForm() {
     assessmentInterest: "",
     message: "",
   });
+  const [privacyConsent, setPrivacyConsent] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -162,7 +165,36 @@ export default function ContactForm() {
             />
           </div>
 
-          <Button type="submit" size="lg" className="w-full bg-emerald-600 hover:bg-emerald-700">
+          <div className="flex items-start space-x-2">
+            <Checkbox
+              id="privacy-consent"
+              checked={privacyConsent}
+              onCheckedChange={(checked) => setPrivacyConsent(checked as boolean)}
+              required
+            />
+            <div className="grid gap-1.5 leading-none">
+              <Label
+                htmlFor="privacy-consent"
+                className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+              >
+                I agree to the{" "}
+                <Link href="/privacy" className="text-emerald-600 hover:text-emerald-700 underline">
+                  Privacy Policy
+                </Link>{" "}
+                and{" "}
+                <Link href="/terms" className="text-emerald-600 hover:text-emerald-700 underline">
+                  Terms of Service
+                </Link>
+              </Label>
+            </div>
+          </div>
+
+          <Button 
+            type="submit" 
+            size="lg" 
+            className="w-full bg-emerald-600 hover:bg-emerald-700"
+            disabled={!privacyConsent}
+          >
             Schedule Assessment
             <Send className="ml-2 h-4 w-4" />
           </Button>
