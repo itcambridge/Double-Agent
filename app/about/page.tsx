@@ -2,7 +2,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Users, Award, Globe, TrendingUp, Brain, Shield, Target, ArrowRight, FileText, BarChart3, Zap } from "lucide-react"
+import { Users, Award, Globe, TrendingUp, Brain, Shield, Target, ArrowRight, FileText, BarChart3, Zap, CheckCircle } from "lucide-react"
 
 export const metadata = {
   title: "About | Double Agent AI Services",
