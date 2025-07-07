@@ -15,6 +15,7 @@ export function Header() {
     { name: "Services", href: "/services" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
+    { name: "PAIR Methodology", href: "/pair-methodology" },
   ]
 
   return (

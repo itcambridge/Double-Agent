@@ -92,3 +92,65 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.pair-methodology-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 40px 32px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+.pair-methodology-container h1,
+.pair-methodology-container h2,
+.pair-methodology-container h3 {
+  color: #1a237e;
+}
+.pair-methodology-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.2em;
+}
+.pair-methodology-container h2 {
+  font-size: 1.7em;
+  margin-top: 2em;
+}
+.pair-methodology-container h3 {
+  font-size: 1.2em;
+  margin-top: 1.5em;
+}
+.pair-methodology-container hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 2em 0;
+}
+.pair-methodology-container ul,
+.pair-methodology-container ol {
+  margin-left: 1.5em;
+}
+.pair-methodology-container table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5em 0;
+}
+.pair-methodology-container th,
+.pair-methodology-container td {
+  border: 1px solid #bdbdbd;
+  padding: 0.7em 1em;
+  text-align: left;
+}
+.pair-methodology-container th {
+  background: #e3e6f3;
+}
+.pair-methodology-container code {
+  background: #f1f1f1;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.pair-methodology-container .emoji {
+  font-size: 1.2em;
+}
+@media (max-width: 600px) {
+  .pair-methodology-container {
+    padding: 16px;
+  }
+}

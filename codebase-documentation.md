@@ -19,9 +19,11 @@ The site is built with a modern, modular Next.js 15 (App Router) and Tailwind CS
 ```
 2DoubleAgent/
 ├── app/                # Main Next.js app directory (App Router)
-│   ├── about/          # About page
-│   ├── contact/        # Contact page (with assessment booking form and FAQ)
+│   ├── about/          # About page (company story, leadership, assessment methodology)
+│   ├── contact/        # Contact page (assessment booking form and FAQ)
+│   ├── privacy/        # Privacy Policy page
 │   ├── services/       # Services page (assessment-first methodology)
+│   ├── terms/          # Terms of Service page
 │   ├── layout.tsx      # Root layout, header/footer
 │   ├── page.tsx        # Home page
 │   └── globals.css     # Global styles
@@ -46,7 +48,14 @@ The site is built with a modern, modular Next.js 15 (App Router) and Tailwind CS
 - **Services:** Details the assessment process, supporting services, and deliverables. Emphasizes tailored recommendations and implementation support.
 - **About:** Company story, leadership bios, assessment-first philosophy, and global reach.
 - **Contact:** Assessment booking form (detailed, consultative), contact info, and FAQ.
-- **Footer:** Company, services, contact, and legal placeholders.
+- **Privacy:** Comprehensive privacy policy covering data collection, usage, and user rights.
+- **Terms:** Terms of service covering service delivery, intellectual property, and legal obligations.
+- **Footer:** Company, services, contact, and legal links.
+
+## Contact Information
+- **Phone:** 0203 883 4544
+- **Email:** hello@double-agent.co.uk
+- **Location:** London, UK (serving clients globally via remote consulting)
 
 ## Key Design Decisions
 - **Assessment-First Messaging:** All content and CTAs drive toward booking an assessment, not selling tools.
@@ -54,6 +63,7 @@ The site is built with a modern, modular Next.js 15 (App Router) and Tailwind CS
 - **Component Modularity:** UI primitives and layout components are reusable and easy to extend.
 - **SEO & Social:** Each page exports a `metadata` object for SEO, Open Graph, and Twitter cards. Sitemap and robots.txt are generated with `next-sitemap`.
 - **Accessibility:** Semantic HTML, alt text, and accessible form fields are prioritized.
+- **Legal Compliance:** Privacy policy and terms of service pages ensure GDPR and legal compliance.
 
 ## Deployment Workflow
 1. **Local Development:**
@@ -67,6 +77,12 @@ The site is built with a modern, modular Next.js 15 (App Router) and Tailwind CS
    - nginx reverse proxy for HTTPS and domain
    - Let's Encrypt for SSL
 
+## Recent Updates (Latest Commit: 206f33f)
+- **Contact Information:** Updated phone number to 0203 883 4544 and email to hello@double-agent.co.uk
+- **Legal Pages:** Added comprehensive Privacy Policy and Terms of Service pages
+- **Contact Form:** Enhanced with additional fields and improved validation
+- **Dependency Management:** Resolved date-fns and react-day-picker version conflicts
+
 ## Extending & Maintaining the Codebase
 - **Add new pages:** Create a new folder in `app/` and add a `page.tsx` file. Export a `metadata` object for SEO.
 - **Add/modify components:** Place reusable UI in `components/` or `components/ui/`. Use Tailwind for styling.
@@ -75,6 +91,7 @@ The site is built with a modern, modular Next.js 15 (App Router) and Tailwind CS
 - **Footer/Header:** Update `footer.tsx` and `header.tsx` for navigation or company info changes.
 - **SEO:** Update `metadata` exports and use `next-sitemap` for sitemap/robots.txt.
 - **Accessibility:** Use semantic tags, label all form fields, and test with Lighthouse or axe.
+- **Legal Updates:** Modify privacy/terms pages as needed for compliance or business changes.
 
 ## Best Practices
 - **Follow the assessment-first, risk-mitigation messaging throughout.**
@@ -83,6 +100,8 @@ The site is built with a modern, modular Next.js 15 (App Router) and Tailwind CS
 - **Document any major changes in Roadmap.md.**
 - **Test locally before deploying to production.**
 - **Keep dependencies up to date and monitor for vulnerabilities.**
+- **Maintain legal compliance with privacy and terms pages.**
+- **Use --legacy-peer-deps flag for npm install to resolve dependency conflicts.**
 
 ## Contact
-For questions or handover, refer to the leadership team in the About page or contact hello@doubleagent.co.uk. 
+For questions or handover, refer to the leadership team in the About page or contact hello@double-agent.co.uk. 
