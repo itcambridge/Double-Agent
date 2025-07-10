@@ -1,33 +1,9 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Brain, TrendingUp, Users, Shield, Zap, Target, ArrowRight, CheckCircle, Clock, FileText, BarChart3, Globe, Award } from "lucide-react"
-
-export const metadata = {
-  title: "Strategic Development Solutions | Double Agent",
-  description: "From Assessment to Implementation: Your AI Coding Transformation Journey. Comprehensive service portfolio guiding organizations through every stage of AI development adoption.",
-  robots: "index, follow",
-  openGraph: {
-    title: "Strategic Development Solutions | Double Agent",
-    description: "From Assessment to Implementation: Your AI Coding Transformation Journey",
-    url: "https://double-agent.co.uk/services",
-    type: "website",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Strategic Development Solutions | Double Agent",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Strategic Development Solutions | Double Agent",
-    description: "From Assessment to Implementation: Your AI Coding Transformation Journey",
-    images: ["/og-image.png"],
-  },
-};
 
 export default function ServicesPage() {
   return (
