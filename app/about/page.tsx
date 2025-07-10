@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -9,7 +11,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Checkbox } from "@/components/ui/checkbox"
 import { Users, Award, Globe, TrendingUp, Brain, Shield, Target, ArrowRight, FileText, BarChart3, Zap, CheckCircle, Clock, Phone, Mail, MapPin, Star } from "lucide-react"
 
-export const metadata = {
+const metadata = {
   title: "Schedule Your Assessment | Double Agent",
   description: "Ready to transform your development process? Book your comprehensive AI development capability assessment and discover how AI coding can revolutionize your team's productivity.",
   robots: "index, follow",
