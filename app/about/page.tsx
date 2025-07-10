@@ -295,7 +295,14 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                <Button className="w-full bg-emerald-600 hover:bg-emerald-700 text-lg py-3">
+                <Button 
+                  className="w-full bg-emerald-600 hover:bg-emerald-700 text-lg py-3"
+                  onClick={() => {
+                    const subject = encodeURIComponent("AI Development Assessment Request");
+                    const body = encodeURIComponent("Hello,\n\nI would like to schedule an AI development capability assessment for my team.\n\nPlease contact me to discuss the next steps.\n\nBest regards");
+                    window.location.href = `mailto:hello@double-agent.co.uk?subject=${subject}&body=${body}`;
+                  }}
+                >
                   Schedule My Assessment
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
@@ -684,7 +691,15 @@ export default function AboutPage() {
             Take the next step: Schedule your comprehensive AI development capability assessment.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Button variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-emerald-600 text-lg px-8 py-3">
+            <Button 
+              variant="outline" 
+              className="bg-transparent border-white text-white hover:bg-white hover:text-emerald-600 text-lg px-8 py-3"
+              onClick={() => {
+                const subject = encodeURIComponent("AI Development Assessment Request");
+                const body = encodeURIComponent("Hello,\n\nI would like to schedule an AI development capability assessment for my team.\n\nPlease contact me to discuss the next steps.\n\nBest regards");
+                window.location.href = `mailto:hello@double-agent.co.uk?subject=${subject}&body=${body}`;
+              }}
+            >
               Schedule My Assessment Now
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>

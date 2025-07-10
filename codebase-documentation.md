@@ -83,6 +83,16 @@ The site is built with a modern, modular Next.js 15 (App Router) and Tailwind CS
 - **Contact Form:** Enhanced with additional fields and improved validation
 - **Dependency Management:** Resolved date-fns and react-day-picker version conflicts
 
+## Latest Changes (January 2025)
+- **Content Optimization:** Removed repetitive "How We Help You Navigate AI Coding" section from home page to reduce redundancy and improve user experience
+- **Navigation Enhancement:** Fixed all "Schedule Assessment" buttons to properly link to `/about` page for assessment booking
+- **Email Integration:** Implemented mailto functionality for all assessment-related buttons:
+  - About page "Schedule My Assessment" buttons now open email client with pre-filled message to hello@double-agent.co.uk
+  - Services page "Download Assessment Overview" button sends email request for assessment documentation
+- **User Flow Improvement:** Established clear navigation path: Home → About (assessment booking) and Services → About (assessment booking)
+- **Link Consistency:** Updated "Learn About Our Process" buttons to link to `/services` page for better information architecture
+- **Code Quality:** Added proper Next.js Link imports and onClick handlers for improved navigation functionality
+
 ## Extending & Maintaining the Codebase
 - **Add new pages:** Create a new folder in `app/` and add a `page.tsx` file. Export a `metadata` object for SEO.
 - **Add/modify components:** Place reusable UI in `components/` or `components/ui/`. Use Tailwind for styling.
@@ -104,4 +114,4 @@ The site is built with a modern, modular Next.js 15 (App Router) and Tailwind CS
 - **Use --legacy-peer-deps flag for npm install to resolve dependency conflicts.**
 
 ## Contact
-For questions or handover, refer to the leadership team in the About page or contact hello@double-agent.co.uk. 
+For questions or handover, refer to the leadership team in the About page or contact hello@double-agent.co.uk.

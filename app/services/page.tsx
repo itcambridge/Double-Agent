@@ -195,7 +195,12 @@ export default function ServicesPage() {
               <p className="text-lg text-slate-600 mb-8">
                 Our assessment typically pays for itself within weeks through improved efficiency alone
               </p>
-              <Button className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8 py-3">
+              <Button 
+                className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8 py-3"
+                onClick={() => {
+                  window.location.href = '/about';
+                }}
+              >
                 Schedule Your Assessment
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -569,11 +574,24 @@ export default function ServicesPage() {
             Start with our comprehensive assessment to understand your current capabilities, identify optimal opportunities, and receive strategic recommendations for successful AI coding adoption. Let's discuss how this investment in your team's productivity can transform your development process.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-emerald-600 text-lg px-8 py-3">
+            <Button 
+              variant="outline" 
+              className="bg-transparent border-white text-white hover:bg-white hover:text-emerald-600 text-lg px-8 py-3"
+              onClick={() => {
+                window.location.href = '/about';
+              }}
+            >
               Schedule Your Assessment
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button className="bg-white text-emerald-600 hover:bg-slate-100 text-lg px-8 py-3">
+            <Button 
+              className="bg-white text-emerald-600 hover:bg-slate-100 text-lg px-8 py-3"
+              onClick={() => {
+                const subject = encodeURIComponent("Assessment Overview Request");
+                const body = encodeURIComponent("Hello,\n\nI would like to receive the AI Development Assessment Overview document.\n\nPlease send me the detailed information about your assessment process.\n\nBest regards");
+                window.location.href = `mailto:hello@double-agent.co.uk?subject=${subject}&body=${body}`;
+              }}
+            >
               Download Assessment Overview
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
