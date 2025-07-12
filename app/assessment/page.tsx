@@ -6,36 +6,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Checkbox } from "@/components/ui/checkbox"
-import { Users, Award, Globe, TrendingUp, Brain, Shield, Target, ArrowRight, FileText, BarChart3, Zap, CheckCircle, Clock, Phone, Mail, MapPin, Star } from "lucide-react"
+import { ArrowRight, CheckCircle, Clock, Phone, Mail, MapPin } from "lucide-react"
 
-export const metadata = {
-  title: "Schedule Your Assessment | Double Agent",
-  description: "Ready to transform your development process? Book your comprehensive AI development capability assessment and discover how AI coding can revolutionize your team's productivity.",
-  robots: "index, follow",
-  openGraph: {
-    title: "Schedule Your Assessment | Double Agent",
-    description: "Ready to transform your development process? Book your comprehensive AI development capability assessment.",
-    url: "https://double-agent.co.uk/assessment",
-    type: "website",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Schedule Your Assessment | Double Agent",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Schedule Your Assessment | Double Agent",
-    description: "Ready to transform your development process? Book your comprehensive AI development capability assessment.",
-    images: ["/og-image.png"],
-  },
-};
+// Note: metadata handled by layout.tsx since this is a client component
 
 export default function AssessmentPage() {
   return (
