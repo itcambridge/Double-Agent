@@ -1,26 +1,42 @@
 export const metadata = {
-  title: "AI Services - Transform Your Financial Operations | Double Agent",
-  description: "Cutting-edge AI solutions for financial services. Risk analytics, market intelligence, and customer insights for director-level decision makers.",
+  title: "Strategic AI Development Consulting | Enterprise AI Adoption | Double Agent",
+  description: "Expert AI development consulting for enterprise software teams. Strategic AI adoption, capability assessments, and secure implementation. Transform your development process with proven PAIR methodology.",
+  keywords: [
+    "AI development consulting",
+    "enterprise AI adoption",
+    "AI capability assessment", 
+    "AI coding tools",
+    "software development AI",
+    "PAIR methodology",
+    "AI integration strategy",
+    "developer AI training",
+    "AI development security",
+    "enterprise software AI"
+  ],
   robots: "index, follow",
+  alternates: {
+    canonical: "https://double-agent.co.uk",
+  },
   openGraph: {
-    title: "AI Services - Transform Your Financial Operations | Double Agent",
-    description: "Cutting-edge AI solutions for financial services. Risk analytics, market intelligence, and customer insights for director-level decision makers.",
+    title: "Strategic AI Development Consulting | Enterprise AI Adoption | Double Agent",
+    description: "Expert AI development consulting for enterprise software teams. Strategic AI adoption, capability assessments, and secure implementation.",
     url: "https://double-agent.co.uk/",
     type: "website",
+    siteName: "Double Agent",
     images: [
       {
-        url: "/og-image.png",
+        url: "/double-agent-logo.png",
         width: 1200,
         height: 630,
-        alt: "AI Services - Transform Your Financial Operations | Double Agent",
+        alt: "Double Agent - Strategic AI Development Consulting",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Services - Transform Your Financial Operations | Double Agent",
-    description: "Cutting-edge AI solutions for financial services. Risk analytics, market intelligence, and customer insights for director-level decision makers.",
-    images: ["/og-image.png"],
+    title: "Strategic AI Development Consulting | Enterprise AI Adoption | Double Agent",
+    description: "Expert AI development consulting for enterprise software teams. Strategic AI adoption, capability assessments, and secure implementation.",
+    images: ["/double-agent-logo.png"],
   },
 };
 
@@ -30,9 +46,59 @@ import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Brain, TrendingUp, Users, CheckCircle, Star, Shield } from "lucide-react"
 import Link from "next/link"
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Double Agent",
+  "url": "https://double-agent.co.uk",
+  "logo": "https://double-agent.co.uk/double-agent-logo.png",
+  "description": "Strategic AI development consulting with an assessment-first approach. Risk mitigation, strategic planning, and implementation for director-level decision makers.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "London",
+    "addressCountry": "UK"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "0203 883 4544",
+    "contactType": "customer service",
+    "email": "hello@double-agent.co.uk"
+  },
+  "sameAs": [
+    "https://double-agent.co.uk"
+  ],
+  "service": [
+    {
+      "@type": "Service",
+      "name": "AI Development Capability Assessment",
+      "description": "Comprehensive evaluation of team readiness, risks, and opportunities for adopting AI development tools."
+    },
+    {
+      "@type": "Service", 
+      "name": "Toolchain & Integration Strategy",
+      "description": "Strategic selection and secure implementation of AI coding platforms without disrupting current workflows."
+    },
+    {
+      "@type": "Service",
+      "name": "Developer Evolution Consulting", 
+      "description": "Transition developers from implementers to strategic thinkers in an AI-enhanced environment."
+    },
+    {
+      "@type": "Service",
+      "name": "Implementation & Optimization Support",
+      "description": "Ongoing support for phased rollout, performance tracking, and continuous improvement."
+    }
+  ]
+}
+
 export default function HomePage() {
   return (
     <div className="min-h-screen">
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=800&width=1200')] opacity-10"></div>
