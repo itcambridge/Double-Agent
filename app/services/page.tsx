@@ -94,7 +94,9 @@ export default function ServicesPage() {
                     <span className="mx-3">|</span>
                     <FileText className="h-4 w-4 mr-2" />
                     <a 
-                      href="mailto:hello@double-agent.co.uk?subject=Assessment%20Overview%20Request&body=Hello%2C%0A%0AI%20would%20like%20to%20receive%20the%20AI%20Development%20Assessment%20Overview%20document.%0A%0APlease%20send%20me%20the%20detailed%20information%20about%20your%20assessment%20process.%0A%0ABest%20regards"
+                      href="/DoubleAgent_AI_Development_Assessment_Overview.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-emerald-600 hover:text-emerald-700 underline"
                     >
                       Download Overview
