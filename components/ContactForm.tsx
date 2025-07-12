@@ -26,8 +26,34 @@ export default function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
+    
+    // Create email content with form data
+    const subject = encodeURIComponent("AI Development Assessment Request - " + formData.company);
+    const emailBody = `Hello,
+
+I would like to schedule an AI development capability assessment for my team.
+
+CONTACT INFORMATION:
+Name: ${formData.firstName} ${formData.lastName}
+Email: ${formData.email}
+Company: ${formData.company}
+Role: ${formData.role}
+
+TEAM DETAILS:
+Development Focus: ${formData.focus}
+Team Size: ${formData.teamSize}
+Assessment Interest: ${formData.assessmentInterest}
+
+MESSAGE:
+${formData.message || 'No additional message provided.'}
+
+Please contact me to discuss the next steps and schedule our assessment.
+
+Best regards,
+${formData.firstName} ${formData.lastName}`;
+
+    const mailtoLink = `mailto:hello@double-agent.co.uk?subject=${subject}&body=${encodeURIComponent(emailBody)}`;
+    window.location.href = mailtoLink;
   };
 
   const handleInputChange = (field: string, value: string) => {
@@ -202,4 +228,4 @@ export default function ContactForm() {
       </CardContent>
     </Card>
   );
-} 
+}

@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -11,6 +12,41 @@ import { ArrowRight, CheckCircle, Clock, Phone, Mail, MapPin } from "lucide-reac
 // Note: metadata handled by layout.tsx since this is a client component
 
 export default function AssessmentPage() {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    company: "",
+  });
+
+  const handleInputChange = (field: string, value: string) => {
+    setFormData((prev) => ({ ...prev, [field]: value }));
+  };
+
+  const handleScheduleAssessment = () => {
+    // Create email content with form data
+    const subject = encodeURIComponent("AI Development Assessment Request - " + (formData.company || "New Inquiry"));
+    const emailBody = `Hello,
+
+I would like to schedule an AI development capability assessment for my team.
+
+CONTACT INFORMATION:
+Name: ${formData.firstName} ${formData.lastName}
+Email: ${formData.email}
+Phone: ${formData.phone || 'Not provided'}
+Company: ${formData.company}
+
+I am interested in understanding how AI coding can transform our development process and would like to discuss the next steps for scheduling a comprehensive assessment.
+
+Please contact me to arrange a suitable time for our assessment.
+
+Best regards,
+${formData.firstName} ${formData.lastName}`;
+
+    const mailtoLink = `mailto:hello@double-agent.co.uk?subject=${subject}&body=${encodeURIComponent(emailBody)}`;
+    window.location.href = mailtoLink;
+  };
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -51,34 +87,56 @@ export default function AssessmentPage() {
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="firstName">First Name *</Label>
-                      <Input id="firstName" placeholder="Enter your first name" />
+                      <Input 
+                        id="firstName" 
+                        placeholder="Enter your first name"
+                        value={formData.firstName}
+                        onChange={(e) => handleInputChange("firstName", e.target.value)}
+                      />
                     </div>
                     <div>
                       <Label htmlFor="lastName">Last Name *</Label>
-                      <Input id="lastName" placeholder="Enter your last name" />
+                      <Input 
+                        id="lastName" 
+                        placeholder="Enter your last name"
+                        value={formData.lastName}
+                        onChange={(e) => handleInputChange("lastName", e.target.value)}
+                      />
                     </div>
                     <div>
                       <Label htmlFor="email">Email Address *</Label>
-                      <Input id="email" type="email" placeholder="Enter your email address" />
+                      <Input 
+                        id="email" 
+                        type="email" 
+                        placeholder="Enter your email address"
+                        value={formData.email}
+                        onChange={(e) => handleInputChange("email", e.target.value)}
+                      />
                     </div>
                     <div>
                       <Label htmlFor="phone">Phone Number</Label>
-                      <Input id="phone" placeholder="Enter your phone number" />
+                      <Input 
+                        id="phone" 
+                        placeholder="Enter your phone number"
+                        value={formData.phone}
+                        onChange={(e) => handleInputChange("phone", e.target.value)}
+                      />
                     </div>
                     <div className="md:col-span-2">
                       <Label htmlFor="company">Company Name *</Label>
-                      <Input id="company" placeholder="Enter your company name" />
+                      <Input 
+                        id="company" 
+                        placeholder="Enter your company name"
+                        value={formData.company}
+                        onChange={(e) => handleInputChange("company", e.target.value)}
+                      />
                     </div>
                   </div>
                 </div>
 
                 <Button 
                   className="w-full bg-emerald-600 hover:bg-emerald-700 text-lg py-3"
-                  onClick={() => {
-                    const subject = encodeURIComponent("AI Development Assessment Request");
-                    const body = encodeURIComponent("Hello,\n\nI would like to schedule an AI development capability assessment for my team.\n\nPlease contact me to discuss the next steps.\n\nBest regards");
-                    window.location.href = `mailto:hello@double-agent.co.uk?subject=${subject}&body=${body}`;
-                  }}
+                  onClick={handleScheduleAssessment}
                 >
                   Schedule My Assessment
                   <ArrowRight className="ml-2 h-5 w-5" />
