@@ -148,42 +148,6 @@ export default function ServicesPage() {
                 </CardContent>
               </Card>
 
-              {/* Developer Evolution Consulting */}
-              <Card className="border-slate-200 hover:border-emerald-300 transition-colors">
-                <CardHeader>
-                  <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
-                    <Users className="h-6 w-6 text-emerald-600" />
-                  </div>
-                  <CardTitle className="text-2xl text-slate-900">Developer Evolution Consulting</CardTitle>
-                  <p className="text-slate-600 mt-2">
-                    Transition developers from implementers to strategic thinkers in an AI-enhanced environment.
-                  </p>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3 mb-6">
-                    <div className="flex items-start">
-                      <CheckCircle className="h-4 w-4 text-emerald-600 mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-slate-700">Team capability mapping & role transitions</span>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="h-4 w-4 text-emerald-600 mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-slate-700">Strategic training programs</span>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="h-4 w-4 text-emerald-600 mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-slate-700">Architecture, testing, and design guidance</span>
-                    </div>
-                  </div>
-                  
-                  <Link href="/contact">
-                    <Button variant="outline" className="w-full border-emerald-600 text-emerald-600 hover:bg-emerald-50">
-                      Schedule Discovery Call
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
-                </CardContent>
-              </Card>
-
               {/* Implementation & Optimization Support */}
               <Card className="border-slate-200 hover:border-emerald-300 transition-colors">
                 <CardHeader>
@@ -214,6 +178,42 @@ export default function ServicesPage() {
                   <Link href="/contact">
                     <Button variant="outline" className="w-full border-emerald-600 text-emerald-600 hover:bg-emerald-50">
                       Learn More
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
+
+              {/* Developer Evolution Consulting */}
+              <Card className="border-slate-200 hover:border-emerald-300 transition-colors">
+                <CardHeader>
+                  <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
+                    <Users className="h-6 w-6 text-emerald-600" />
+                  </div>
+                  <CardTitle className="text-2xl text-slate-900">Developer Evolution Consulting</CardTitle>
+                  <p className="text-slate-600 mt-2">
+                    Transition developers from implementers to strategic thinkers in an AI-enhanced environment.
+                  </p>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3 mb-6">
+                    <div className="flex items-start">
+                      <CheckCircle className="h-4 w-4 text-emerald-600 mr-3 mt-0.5 flex-shrink-0" />
+                      <span className="text-slate-700">Team capability mapping & role transitions</span>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="h-4 w-4 text-emerald-600 mr-3 mt-0.5 flex-shrink-0" />
+                      <span className="text-slate-700">Strategic training programs</span>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="h-4 w-4 text-emerald-600 mr-3 mt-0.5 flex-shrink-0" />
+                      <span className="text-slate-700">Architecture, testing, and design guidance</span>
+                    </div>
+                  </div>
+                  
+                  <Link href="/contact">
+                    <Button variant="outline" className="w-full border-emerald-600 text-emerald-600 hover:bg-emerald-50">
+                      Schedule Discovery Call
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </Link>
