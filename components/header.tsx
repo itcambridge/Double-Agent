@@ -48,8 +48,12 @@ export function Header() {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline">Schedule Call</Button>
-            <Button className="bg-emerald-600 hover:bg-emerald-700">Get Started</Button>
+            <Link href="/contact">
+              <Button variant="outline">Schedule Call</Button>
+            </Link>
+            <Link href="/assessment">
+              <Button className="bg-emerald-600 hover:bg-emerald-700">Get Started</Button>
+            </Link>
           </div>
 
           {/* Mobile Navigation */}
@@ -72,10 +76,14 @@ export function Header() {
                   </Link>
                 ))}
                 <div className="pt-4 space-y-2">
-                  <Button variant="outline" className="w-full bg-transparent">
-                    Schedule Call
-                  </Button>
-                  <Button className="w-full bg-emerald-600 hover:bg-emerald-700">Get Started</Button>
+                  <Link href="/contact" onClick={() => setIsOpen(false)}>
+                    <Button variant="outline" className="w-full bg-transparent">
+                      Schedule Call
+                    </Button>
+                  </Link>
+                  <Link href="/assessment" onClick={() => setIsOpen(false)}>
+                    <Button className="w-full bg-emerald-600 hover:bg-emerald-700">Get Started</Button>
+                  </Link>
                 </div>
               </div>
             </SheetContent>
