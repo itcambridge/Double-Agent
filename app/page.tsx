@@ -38,17 +38,16 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=800&width=1200')] opacity-10"></div>
         <div className="relative container mx-auto px-4 py-24 lg:py-32">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge className="mb-6 bg-emerald-600 hover:bg-emerald-700 text-white">About Our Company</Badge>
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-              Transforming Development Through Strategic AI Assessment
+              Strategic AI Adoption for Enterprise Software Teams
             </h1>
-            <p className="text-xl lg:text-2xl text-emerald-200 mb-4">
-              Navigate the AI coding revolution safely with expert guidance that prevents costly tool selection mistakes, security vulnerabilities, and implementation failures.
+            <p className="text-xl lg:text-2xl text-emerald-200 mb-8">
+              We help development leaders integrate AI safely, securely, and productively—without disrupting code quality, team structure, or compliance frameworks.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/about">
                 <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8 py-3">
-                  Schedule Assessment
+                  Request Your AI Capability Assessment
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
