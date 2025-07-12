@@ -45,7 +45,7 @@ export default function HomePage() {
               We help development leaders integrate AI safely, securely, and productively—without disrupting code quality, team structure, or compliance frameworks.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/about">
+              <Link href="/assessment">
                 <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8 py-3">
                   Request Your AI Capability Assessment
                   <ArrowRight className="ml-2 h-5 w-5" />
@@ -230,7 +230,7 @@ export default function HomePage() {
             Let's evaluate how AI coding can transform your development process while maintaining quality and team effectiveness.
           </p>
           <div className="flex justify-center">
-            <Link href="/about">
+            <Link href="/assessment">
               <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
                 Request Your AI Capability Assessment
                 <ArrowRight className="ml-2 h-5 w-5" />

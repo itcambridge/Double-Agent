@@ -25,7 +25,7 @@ export function Footer() {
             <ul className="space-y-2 text-slate-300 text-sm">
               <li><Link href="/services">Overview</Link></li>
               <li><Link href="/services">Our Approach</Link></li>
-              <li><Link href="/about">Industries</Link></li>
+              <li><Link href="/assessment">Industries</Link></li>
             </ul>
           </div>
 
@@ -33,7 +33,7 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Company</h4>
             <ul className="space-y-2 text-slate-300 text-sm">
-              <li><Link href="/about">About Us</Link></li>
+              <li><Link href="/assessment">Assessment</Link></li>
               <li><Link href="/contact">Contact</Link></li>
               <li><Link href="/privacy">Privacy Policy</Link></li>
               <li><Link href="/terms">Terms of Service</Link></li>

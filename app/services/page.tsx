@@ -103,7 +103,7 @@ export default function ServicesPage() {
                     </a>
                   </div>
                   
-                  <Link href="/about">
+                  <Link href="/assessment">
                     <Button className="w-full bg-emerald-600 hover:bg-emerald-700">
                       Request Assessment
                       <ArrowRight className="ml-2 h-4 w-4" />
@@ -232,7 +232,7 @@ export default function ServicesPage() {
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
             Our flagship assessment identifies the best path forward.
           </p>
-          <Link href="/about">
+          <Link href="/assessment">
             <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
               Request Your AI Capability Assessment
               <ArrowRight className="ml-2 h-5 w-5" />
