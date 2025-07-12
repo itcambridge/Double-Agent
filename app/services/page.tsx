@@ -93,16 +93,12 @@ export default function ServicesPage() {
                     <span>2–3 weeks</span>
                     <span className="mx-3">|</span>
                     <FileText className="h-4 w-4 mr-2" />
-                    <button 
+                    <a 
+                      href="mailto:hello@double-agent.co.uk?subject=Assessment%20Overview%20Request&body=Hello%2C%0A%0AI%20would%20like%20to%20receive%20the%20AI%20Development%20Assessment%20Overview%20document.%0A%0APlease%20send%20me%20the%20detailed%20information%20about%20your%20assessment%20process.%0A%0ABest%20regards"
                       className="text-emerald-600 hover:text-emerald-700 underline"
-                      onClick={() => {
-                        const subject = encodeURIComponent("Assessment Overview Request");
-                        const body = encodeURIComponent("Hello,\n\nI would like to receive the AI Development Assessment Overview document.\n\nPlease send me the detailed information about your assessment process.\n\nBest regards");
-                        window.location.href = `mailto:hello@double-agent.co.uk?subject=${subject}&body=${body}`;
-                      }}
                     >
                       Download Overview
-                    </button>
+                    </a>
                   </div>
                   
                   <Link href="/about">
