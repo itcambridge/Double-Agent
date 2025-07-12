@@ -135,6 +135,63 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Services Preview Section */}
+      <section className="py-20 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl font-bold text-slate-900 mb-4">What We Offer</h2>
+              <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+                We help software leaders adopt AI safely, strategically, and with measurable ROI.
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              {/* AI Development Capability Assessment */}
+              <div className="bg-white p-6 rounded-lg border border-slate-200 hover:border-emerald-300 transition-colors">
+                <h3 className="text-xl font-semibold text-slate-900 mb-3">AI Development Capability Assessment</h3>
+                <p className="text-slate-600">
+                  Understand your current workflows, skills, risks, and opportunities.
+                </p>
+              </div>
+
+              {/* Toolchain & Integration Strategy */}
+              <div className="bg-white p-6 rounded-lg border border-slate-200 hover:border-emerald-300 transition-colors">
+                <h3 className="text-xl font-semibold text-slate-900 mb-3">Toolchain & Integration Strategy</h3>
+                <p className="text-slate-600">
+                  Choose the right AI coding platforms—and implement them securely.
+                </p>
+              </div>
+
+              {/* Developer Evolution Consulting */}
+              <div className="bg-white p-6 rounded-lg border border-slate-200 hover:border-emerald-300 transition-colors">
+                <h3 className="text-xl font-semibold text-slate-900 mb-3">Developer Evolution Consulting</h3>
+                <p className="text-slate-600">
+                  Help your team shift from code execution to system design and strategy.
+                </p>
+              </div>
+
+              {/* Implementation & Optimization Support */}
+              <div className="bg-white p-6 rounded-lg border border-slate-200 hover:border-emerald-300 transition-colors">
+                <h3 className="text-xl font-semibold text-slate-900 mb-3">Implementation & Optimization Support</h3>
+                <p className="text-slate-600">
+                  Roll out AI coding tools with confidence, backed by expert guidance.
+                </p>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <Link href="/services">
+                <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8 py-3">
+                  Explore All Services
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Mission Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
