@@ -27,7 +27,7 @@ export const metadata = {
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { ArrowRight, Brain, TrendingUp, Users, CheckCircle, Star } from "lucide-react"
+import { ArrowRight, Brain, TrendingUp, Users, CheckCircle, Star, Shield } from "lucide-react"
 import Link from "next/link"
 
 export default function HomePage() {
@@ -58,6 +58,76 @@ export default function HomePage() {
                   className="border-white text-white hover:bg-white hover:text-slate-900 text-lg px-8 py-3 bg-transparent"
                 >
                   Learn About Our Process
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Value Propositions Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl font-bold text-slate-900 mb-6">Why Leading Development Teams Work With Us</h2>
+              <p className="text-lg text-slate-600 max-w-4xl mx-auto">
+                AI coding tools offer incredible potential—but without strategic guidance, most implementations introduce security risks, overwhelm teams, and fail to deliver ROI. We help you avoid those pitfalls.
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              {/* Security Without Compromise */}
+              <Card className="border-slate-200 hover:border-emerald-300 transition-colors">
+                <CardHeader className="text-center pb-4">
+                  <div className="mx-auto mb-4 w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center">
+                    <Shield className="h-8 w-8 text-emerald-600" />
+                  </div>
+                  <CardTitle className="text-xl text-slate-900">Security Without Compromise</CardTitle>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <p className="text-slate-600">
+                    We ensure your AI development tools are integrated within a robust governance and validation framework—avoiding the vulnerabilities that affect 90% of unvetted AI code.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Team Evolution, Not Disruption */}
+              <Card className="border-slate-200 hover:border-emerald-300 transition-colors">
+                <CardHeader className="text-center pb-4">
+                  <div className="mx-auto mb-4 w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center">
+                    <Users className="h-8 w-8 text-emerald-600" />
+                  </div>
+                  <CardTitle className="text-xl text-slate-900">Team Evolution, Not Disruption</CardTitle>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <p className="text-slate-600">
+                    Your developers won't be replaced—they'll be elevated. We provide the strategy and training to help teams shift from task execution to architectural leadership.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Clear ROI, Measurable Gains */}
+              <Card className="border-slate-200 hover:border-emerald-300 transition-colors">
+                <CardHeader className="text-center pb-4">
+                  <div className="mx-auto mb-4 w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center">
+                    <TrendingUp className="h-8 w-8 text-emerald-600" />
+                  </div>
+                  <CardTitle className="text-xl text-slate-900">Clear ROI, Measurable Gains</CardTitle>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <p className="text-slate-600">
+                    Every engagement includes a realistic ROI projection and productivity benchmarks—so your investment delivers visible, trackable outcomes in weeks, not quarters.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="text-center">
+              <Link href="/services">
+                <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8 py-3">
+                  See How We Work
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
             </div>
