@@ -46,8 +46,9 @@ export default function HomePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/assessment">
-                <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8 py-3">
-                  Request Your AI Capability Assessment
+                <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8 py-3 w-full sm:w-auto">
+                  <span className="hidden sm:inline">Request Your AI Capability Assessment</span>
+                  <span className="sm:hidden">Get Assessment</span>
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>

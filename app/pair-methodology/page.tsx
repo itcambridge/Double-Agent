@@ -568,14 +568,16 @@ export default function PairMethodologyPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/assessment">
-              <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
-                Request Your AI Capability Assessment
+              <Button size="lg" variant="secondary" className="text-lg px-8 py-3 w-full sm:w-auto">
+                <span className="hidden sm:inline">Request Your AI Capability Assessment</span>
+                <span className="sm:hidden">Get Assessment</span>
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
             <Link href="/contact">
-              <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-emerald-600 text-lg px-8 py-3">
-                Discuss PAIR Implementation
+              <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-emerald-600 text-lg px-8 py-3 w-full sm:w-auto">
+                <span className="hidden sm:inline">Discuss PAIR Implementation</span>
+                <span className="sm:hidden">Discuss Implementation</span>
               </Button>
             </Link>
           </div>

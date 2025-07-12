@@ -233,8 +233,9 @@ export default function ServicesPage() {
             Our flagship assessment identifies the best path forward.
           </p>
           <Link href="/assessment">
-            <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
-              Request Your AI Capability Assessment
+            <Button size="lg" variant="secondary" className="text-lg px-8 py-3 w-full sm:w-auto">
+              <span className="hidden sm:inline">Request Your AI Capability Assessment</span>
+              <span className="sm:hidden">Get Assessment</span>
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </Link>
