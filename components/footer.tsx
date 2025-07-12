@@ -23,12 +23,9 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-slate-300 text-sm">
-              <li><Link href="/services">AI Development Assessment</Link></li>
-              <li><Link href="/services">Tool Selection Consulting</Link></li>
-              <li><Link href="/services">Implementation Support</Link></li>
-              <li><Link href="/services">Team Training & Development</Link></li>
-              <li><Link href="/services">Strategic Roadmap Planning</Link></li>
-              <li><Link href="/services">Ongoing Optimization</Link></li>
+              <li><Link href="/services">Overview</Link></li>
+              <li><Link href="/services">Our Approach</Link></li>
+              <li><Link href="/about">Industries</Link></li>
             </ul>
           </div>
 

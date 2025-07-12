@@ -57,7 +57,7 @@ export default function HomePage() {
                   variant="outline"
                   className="border-white text-white hover:bg-white hover:text-slate-900 text-lg px-8 py-3 bg-transparent"
                 >
-                  Learn About Our Process
+                  See How We Work
                 </Button>
               </Link>
             </div>
@@ -192,51 +192,31 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Mission Section */}
-      <section className="py-20">
+      {/* Our Global Impact Section */}
+      <section className="py-16 bg-slate-50">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Our Mission</h2>
-            <p className="text-xl text-slate-600 leading-relaxed">
-              To bridge the gap between traditional development practices and AI-powered coding through expert assessment and strategic guidance, enabling organizations to adopt AI development tools effectively while maximizing team productivity and maintaining code quality.<br/>
-              <span className="block mt-4">We combine 60+ years of software development and infrastructure experience with cutting-edge AI coding expertise to help teams evolve their development practices thoughtfully and successfully.</span>
-            </p>
-            <div className="flex justify-center mt-8">
-              <div className="flex flex-col items-center">
-                <Brain className="h-12 w-12 text-emerald-600 mb-2" />
-                <span className="text-slate-500">Strategic Assessment</span>
-              </div>
-            </div>
-            <div className="mt-4 text-slate-500">Global Development Consulting</div>
-          </div>
-        </div>
-      </section>
-
-      {/* Impact Section */}
-      <section className="py-20 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Our Impact</h2>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Our Global Impact</h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              Helping development teams worldwide successfully adopt AI coding practices
+              Helping software leaders adopt AI coding practices worldwide.
             </p>
           </div>
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
-              <div className="text-4xl font-bold text-emerald-600 mb-2">150+</div>
-              <div className="text-slate-600">Assessments Completed</div>
+              <div className="text-3xl font-bold text-emerald-600 mb-1">150+</div>
+              <div className="text-slate-600 text-sm">Assessments</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-emerald-600 mb-2">85%</div>
-              <div className="text-slate-600">Implementation Success Rate</div>
+              <div className="text-3xl font-bold text-emerald-600 mb-1">85%</div>
+              <div className="text-slate-600 text-sm">Implementation Success Rate</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-emerald-600 mb-2">6x</div>
-              <div className="text-slate-600">Average Productivity Improvement</div>
+              <div className="text-3xl font-bold text-emerald-600 mb-1">6x</div>
+              <div className="text-slate-600 text-sm">Productivity Gain</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-emerald-600 mb-2">20+</div>
-              <div className="text-slate-600">Countries Served</div>
+              <div className="text-3xl font-bold text-emerald-600 mb-1">20+</div>
+              <div className="text-slate-600 text-sm">Countries</div>
             </div>
           </div>
         </div>
@@ -249,19 +229,11 @@ export default function HomePage() {
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
             Let's evaluate how AI coding can transform your development process while maintaining quality and team effectiveness.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <Link href="/about">
               <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
-                Schedule Assessment
-              </Button>
-            </Link>
-            <Link href="/services">
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-emerald-600 text-lg px-8 py-3 bg-transparent"
-              >
-                Learn About Our Process
+                Request Your AI Capability Assessment
+                <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
           </div>
