@@ -97,7 +97,7 @@ export default function AboutPage() {
                 <CardHeader className="text-center">
                   <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
                     <Image
-                      src="/CEO.jpg"
+                      src="/CEO.png"
                       alt="Viv Austin - CEO"
                       width={96}
                       height={96}

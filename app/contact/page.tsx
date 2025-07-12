@@ -84,9 +84,7 @@ export default function ContactPage() {
                   <div>
                     <div className="font-semibold">Address</div>
                     <div className="text-slate-600">
-                      123 Financial District
-                      <br />
-                      New York, NY 10004
+                      London, UK
                     </div>
                   </div>
                 </div>
@@ -94,7 +92,7 @@ export default function ContactPage() {
                   <Clock className="h-5 w-5 text-emerald-600 mt-1" />
                   <div>
                     <div className="font-semibold">Business Hours</div>
-                    <div className="text-slate-600">Mon–Fri: 9am–6pm EST</div>
+                    <div className="text-slate-600">Mon–Fri: 9am–6pm GMT</div>
                   </div>
                 </div>
               </div>
