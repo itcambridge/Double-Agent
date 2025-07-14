@@ -34,44 +34,15 @@ import Image from "next/image"
 export default function AboutPage() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
+      {/* Hero Section - Our Story */}
       <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-              AI Strategy for Development Teams—Led by Engineers Who Understand Enterprise Reality
+              Our Story
             </h1>
-            <p className="text-xl text-slate-300 leading-relaxed">
-              We help engineering teams adopt AI tools confidently, with secure integration, clear ROI, and zero disruption to code quality, team roles, or compliance.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Mission */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-slate-900 mb-6">Our Mission</h2>
-            <div className="text-lg text-slate-600 leading-relaxed space-y-4">
-              <p>
-                AI coding tools aren't magic—they're amplifiers. Used wisely, they unlock massive productivity. Used carelessly, they introduce risk and resistance.
-              </p>
-              <p>
-                At Double Agent, we guide development leaders through strategic AI adoption—ensuring safety, clarity, and long-term success.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Story */}
-      <section className="py-20 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-slate-900 mb-6">Our Story</h2>
-            <h3 className="text-2xl font-semibold text-emerald-600 mb-6">Brothers. Engineers. Transformation Specialists.</h3>
-            <div className="text-lg text-slate-600 leading-relaxed space-y-4">
+            <h2 className="text-2xl font-semibold text-emerald-400 mb-6">Brothers. Engineers. Transformation Specialists.</h2>
+            <div className="text-lg text-slate-300 leading-relaxed space-y-4">
               <p>
                 Double Agent was founded by Viv Austin and Mark Austin—brothers with over 60 years of combined experience in software engineering and IT infrastructure.
               </p>
@@ -139,6 +110,40 @@ export default function AboutPage() {
                   </blockquote>
                 </CardContent>
               </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AI Strategy for Development Teams */}
+      <section className="py-20 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold text-slate-900 mb-6">AI Strategy for Development Teams</h2>
+            <p className="text-xl text-slate-600 mb-8">
+              Led by Engineers Who Understand Enterprise Reality
+            </p>
+            <div className="text-lg text-slate-600 leading-relaxed space-y-4">
+              <p>
+                We help engineering teams adopt AI tools confidently, with secure integration, clear ROI, and zero disruption to code quality, team roles, or compliance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Mission */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold text-slate-900 mb-6">Our Mission</h2>
+            <div className="text-lg text-slate-600 leading-relaxed space-y-4">
+              <p>
+                AI coding tools aren't magic—they're amplifiers. Used wisely, they unlock massive productivity. Used carelessly, they introduce risk and resistance.
+              </p>
+              <p>
+                At Double Agent, we guide development leaders through strategic AI adoption—ensuring safety, clarity, and long-term success.
+              </p>
             </div>
           </div>
         </div>
